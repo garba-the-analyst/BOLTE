@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BOLTE — All-Member Questionnaire (2 founders + 5 members)</title>
+<style>
+  :root { --navy:#0A1428; --accent:#2E86DE; --ink:#111; --muted:#5B6B7F; --line:#c9d2e0; --bg:#f4f6fa; }
+  * { box-sizing:border-box; }
+  body { font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); margin:0; }
+  .wrap { max-width:880px; margin:0 auto; padding:24px 16px 64px; }
+  .sheet { background:#fff; border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+  header.brand { background:var(--navy); color:#fff; padding:28px 28px 22px; }
+  header.brand img.logo { max-width:260px; width:60%; height:auto; display:block; margin-bottom:10px; }
+  header.brand h1 { margin:.2em 0 .1em; font-size:24px; letter-spacing:.04em; }
+  header.brand p { margin:.2em 0; color:#B8C2CC; font-size:13px; }
+  .pill { display:inline-block; background:var(--accent); color:#fff; font-size:12px; font-weight:700; padding:3px 12px; border-radius:20px; letter-spacing:.06em; }
+  .body { padding:8px 28px 28px; }
+  h2.sec { font-size:15px; color:var(--navy); border-bottom:2px solid var(--accent); padding-bottom:4px; margin:26px 0 12px; text-transform:uppercase; letter-spacing:.05em; }
+  label.f { display:block; margin:10px 0 2px; font-size:13px; font-weight:600; }
+  label.f small { font-weight:400; color:var(--muted); }
+  .qcode { display:inline-block; background:#e8f1fd; color:#1b5fa8; font-size:11px; font-weight:800; padding:1px 8px; border-radius:6px; margin-right:6px; }
+  input[type=text],input[type=email],input[type=tel],input[type=date],select,textarea { width:100%; padding:9px 10px; font-size:14px; border:1px solid var(--line); border-radius:8px; background:#fff; font-family:inherit; }
+  textarea { min-height:64px; resize:vertical; }
+  .row { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .row3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; }
+  @media(max-width:640px){ .row,.row3{ grid-template-columns:1fr; } }
+  .check { display:flex; gap:10px; align-items:flex-start; margin:10px 0; font-size:14px; }
+  .check input { margin-top:4px; transform:scale(1.15); }
+  .hint { font-size:12px; color:var(--muted); }
+  .err { color:#B00020; font-size:12px; min-height:16px; }
+  .lands { font-size:12px; color:var(--muted); margin:2px 0 8px; }
+  #foundersSec { display:none; border:1px dashed var(--accent); border-radius:10px; padding:4px 16px 16px; margin-top:12px; }
+  #foundersSec.open { display:block; }
+  .toolbar { position:sticky; bottom:0; background:#fff; border-top:1px solid var(--line); padding:12px 28px; display:flex; flex-wrap:wrap; gap:10px; }
+  button { font-size:14px; font-weight:700; padding:10px 18px; border-radius:9px; border:1px solid var(--navy); cursor:pointer; }
+  .btn-primary { background:var(--navy); color:#fff; }
+  .btn-accent { background:var(--accent); border-color:var(--accent); color:#fff; }
+  .btn-ghost { background:#fff; color:var(--navy); }
+  #saveState { font-size:12px; color:var(--muted); align-self:center; }
+  .req::after { content:" *"; color:#B00020; }
+  @media print {
+    body { background:#fff; }
+    .wrap { max-width:100%; padding:0; }
+    .sheet { border:none; border-radius:0; }
+    .toolbar, .noprint, #saveState { display:none !important; }
+    header.brand { background:#fff !important; color:#000; border-bottom:3px solid var(--navy); }
+    header.brand p { color:#333; }
+    .body { padding:0 4px; }
+    input,select,textarea { border:none; border-bottom:1px solid #999; border-radius:0; padding:4px 0; }
+    #foundersSec { display:block; border:none; padding:0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="sheet">
+  <header class="brand">
+    <img class="logo" src="../assets/logo-placeholder/bolte-lockup-dark.png" alt="" onerror="this.remove()">
+    <span class="pill">ALL-MEMBER QUESTIONNAIRE — P1–P7</span>
+    <h1>BOLTE — All-Member Questionnaire</h1>
+    <p>Research, engineering &amp; technology company &nbsp;•&nbsp; Co-founders: Abdullahi Garba &amp; Essien Frances</p>
+    <p class="noprint">One collection pass for all 7 members. Fill → <b>Save</b> (this browser only) → <b>Export JSON / CSV</b> and send the file to the co-founders, or <b>Print / Save as PDF</b>. Nothing leaves this device until you export or print. After this, each member completes Stage 1 + Stage 2 onboarding forms and wet-signs MOU/NDA/IP.</p>
+  </header>
+  <div class="body">
+  <form id="qform" novalidate>
+    <h2 class="sec">Who is filling this</h2>
+    <label class="f req" for="pcode">Your slot</label>
+    <select id="pcode" name="pcode" required>
+      <option value="">— select —</option>
+      <option value="P1">P1 — Abdullahi Garba (Co-founder / Technical Lead)</option>
+      <option value="P2">P2 — Essien Frances (Co-founder / Operations Lead)</option>
+      <option value="P3">P3 — Member B1 (Treasurer)</option>
+      <option value="P4">P4 — Member B2 (Product/Operations Manager)</option>
+      <option value="P5">P5 — Member C</option>
+      <option value="P6">P6 — Member D</option>
+      <option value="P7">P7 — Member E</option>
+    </select>
+
+    <h2 class="sec">A — Identity</h2>
+    <p class="lands">Lands in: MOU Schedules A/D, legal status table.</p>
+    <label class="f req" for="q1"><span class="qcode">Q1</span>Full legal name (exactly as on ID)</label>
+    <input type="text" id="q1" name="q1" autocomplete="name" required>
+    <div class="row">
+      <div><label class="f" for="q2"><span class="qcode">Q2</span>Preferred short name</label><input type="text" id="q2" name="q2"></div>
+      <div><label class="f req" for="q5"><span class="qcode">Q5</span>Date of birth</label><input type="date" id="q5" name="q5" required><div class="err" id="dobErr"></div></div>
+    </div>
+    <div class="row">
+      <div><label class="f" for="q3"><span class="qcode">Q3</span>Residential address <small>(MOU signature block)</small></label><input type="text" id="q3" name="q3"></div>
+      <div><label class="f" for="q4"><span class="qcode">Q4</span>ID type <small>(e.g. NIN / voter's card / school ID — type only)</small></label><input type="text" id="q4" name="q4"></div>
+    </div>
+    <div><label class="f" for="age">Age today (auto)</label><input type="text" id="age" name="age" readonly tabindex="-1"></div>
+
+    <h2 class="sec">B — Contact + privacy</h2>
+    <p class="lands">Lands in: MOU Schedule D; team page only if you consent (Q9).</p>
+    <div class="row">
+      <div><label class="f req" for="q6"><span class="qcode">Q6</span>Email</label><input type="email" id="q6" name="q6" autocomplete="email" required></div>
+      <div><label class="f req" for="q7"><span class="qcode">Q7</span>Phone / WhatsApp</label><input type="tel" id="q7" name="q7" autocomplete="tel" required></div>
+    </div>
+    <div class="row">
+      <div><label class="f" for="q8"><span class="qcode">Q8</span>City / State</label><input type="text" id="q8" name="q8" placeholder="e.g. Abuja, FCT"></div>
+      <div><label class="f req" for="q9"><span class="qcode">Q9</span>Publish my name on the public team page?</label>
+        <select id="q9" name="q9" required><option value="">— select —</option><option>Full name</option><option>Initials only</option><option>Hide until after competition</option></select></div>
+    </div>
+    <label class="f" for="q10"><span class="qcode">Q10</span>Emergency contact <small>(name + phone, records only)</small></label>
+    <input type="text" id="q10" name="q10">
+
+    <h2 class="sec">C — Student status (NDAIE eligibility)</h2>
+    <p class="lands">Lands in: eligibility tracker. Presenters must be 16–30 and currently enrolled (Rulebook §2).</p>
+    <div class="row">
+      <div><label class="f req" for="q11"><span class="qcode">Q11</span>School / institution</label><input type="text" id="q11" name="q11" required></div>
+      <div><label class="f" for="q12"><span class="qcode">Q12</span>Matric / admission / student ID</label><input type="text" id="q12" name="q12"></div>
+    </div>
+    <div class="row">
+      <div><label class="f" for="q13"><span class="qcode">Q13</span>Level / program <small>(e.g. 300L Electrical Engineering)</small></label><input type="text" id="q13" name="q13"></div>
+      <div><label class="f req" for="q14"><span class="qcode">Q14</span>Currently enrolled?</label>
+        <select id="q14" name="q14" required><option value="">— select —</option><option>Yes</option><option>No</option></select></div>
+    </div>
+    <label class="f" for="q15"><span class="qcode">Q15</span>Available for video (14 Oct), semi (28 Oct), finals Lagos (27 Nov)?</label>
+    <select id="q15" name="q15"><option value="">— select —</option><option>Yes — all stages</option><option>Partial (state limits below)</option><option>No</option></select>
+    <label class="f" for="q15b">Availability limits <small>(if partial)</small></label>
+    <input type="text" id="q15b" name="q15b">
+
+    <h2 class="sec">D — Skills, seat, commitment</h2>
+    <p class="lands">Lands in: org chart, roadmap owners, NDAIE Q&amp;A roles.</p>
+    <label class="f req" for="q16"><span class="qcode">Q16</span>Core skills <small>(e.g. embedded, RF, Python, CAD, design, ops)</small></label>
+    <textarea id="q16" name="q16" required></textarea>
+    <div class="row">
+      <div><label class="f req" for="q17"><span class="qcode">Q17</span>Seat preference (1st choice)</label>
+        <select id="q17" name="q17" required><option value="">— select —</option><option>Treasurer</option><option>Product / Operations Manager</option><option>Builder — RF / Avionics</option><option>Builder — Software</option><option>Builder — Hardware / Embedded</option><option>Builder — Research / Design / Comms</option></select></div>
+      <div><label class="f" for="q18"><span class="qcode">Q18</span>Seat preference (2nd choice)</label>
+        <select id="q18" name="q18"><option value="">— select —</option><option>Treasurer</option><option>Product / Operations Manager</option><option>Builder — RF / Avionics</option><option>Builder — Software</option><option>Builder — Hardware / Embedded</option><option>Builder — Research / Design / Comms</option></select></div>
+    </div>
+    <div class="row">
+      <div><label class="f" for="q19"><span class="qcode">Q19</span>Weekly hours you can commit</label><input type="text" id="q19" name="q19" placeholder="e.g. 8 hrs/week + weekly review"></div>
+      <div><label class="f" for="q20"><span class="qcode">Q20</span>Background links <small>(portfolio, GitHub — optional)</small></label><input type="text" id="q20" name="q20"></div>
+    </div>
+
+    <h2 class="sec">E — Prior IP + conflicts</h2>
+    <p class="lands">Lands in: IP Schedule A, CoI + NASS declaration.</p>
+    <label class="f" for="q21"><span class="qcode">Q21</span>Prior IP you own <small>(excluded from assignment; write "none" if none)</small></label>
+    <textarea id="q21" name="q21" placeholder="none"></textarea>
+    <label class="f" for="q22"><span class="qcode">Q22</span>Links to NASS judges / organisers / sponsors / competing teams <small>(write "none" if none)</small></label>
+    <textarea id="q22" name="q22" placeholder="none"></textarea>
+
+    <h2 class="sec">F — Portrait + acknowledgements</h2>
+    <label class="f req" for="photo"><span class="qcode">Q23</span>Professional portrait <small>(headshot you approve for BOLTE use — JPG/PNG)</small></label>
+    <input type="file" id="photo" class="noprint" accept="image/*">
+    <div><img id="photoPreview" alt="Portrait preview" style="display:none;max-width:160px;margin-top:8px;border:1px solid var(--line);border-radius:8px;"></div>
+    <div style="margin-top:6px;"><button type="button" class="btn-ghost noprint" id="btnPhotoRemove">Remove photo</button> <span class="hint" id="photoName"></span></div>
+    <div class="err" id="photoErr"></div>
+    <label class="f"><span class="qcode">Q24</span>Confirm all five (tick each)</label>
+    <label class="check"><input type="checkbox" id="q24a" name="q24a"> <span>(a) I will uphold the Canon + ethics guardrails.</span></label>
+    <label class="check"><input type="checkbox" id="q24b" name="q24b"> <span>(b) I agree to the Code of Conduct (original work, safety).</span></label>
+    <label class="check"><input type="checkbox" id="q24c" name="q24c"> <span>(c) I agree to NDA confidentiality (3 yrs; trade secrets 5 yrs).</span></label>
+    <label class="check"><input type="checkbox" id="q24d" name="q24d"> <span>(d) I assign BOLTE-scope IP to the collective; prior IP above excluded.</span></label>
+    <label class="check"><input type="checkbox" id="q24e" name="q24e"> <span>(e) I understand the profit model (50% Treasury / 10+10 / 7.5+7.5 / 5+5+5, pro-rata, monthly ledger).</span></label>
+    <div class="err" id="ackErr"></div>
+
+    <h2 class="sec">Confirmation</h2>
+    <div class="row">
+      <div><label class="f req" for="confirmName">Completed by (type full name)</label><input type="text" id="confirmName" name="confirmName" required></div>
+      <div><label class="f req" for="confirmDate">Date</label><input type="date" id="confirmDate" name="confirmDate" required></div>
+    </div>
+    <div class="err" id="confirmErr"></div>
+
+    <h2 class="sec">Part 2 — Founders only</h2>
+    <label class="check noprint"><input type="checkbox" id="isFounder"> <span><b>I am P1/P2 filling the founders section</b> (company decisions F1–F12; leave hidden otherwise).</span></label>
+    <div id="foundersSec">
+      <p class="lands">Company decisions — pointers to <code>docs/00-tailoring-questionnaire.md</code> codes. Leave unknowns as [TBD].</p>
+      <label class="f" for="f1"><span class="qcode">F1</span>Published contact: email/phone/city, or "keep private" + inbox holder? (→ A2)</label><textarea id="f1" name="f1"></textarea>
+      <label class="f" for="f2"><span class="qcode">F2</span>Effective date for all documents? (→ A3)</label><input type="text" id="f2" name="f2">
+      <label class="f" for="f3"><span class="qcode">F3</span>Disputes seat (Lagos?), currency (₦?), language (Nigerian English + IEEE)? (→ A4/A5/A6)</label><textarea id="f3" name="f3"></textarea>
+      <label class="f" for="f4"><span class="qcode">F4</span>Canon: freeze wording? Amendment unanimous or 2/3? Ethics approved? Non-goals? (→ B1–B4)</label><textarea id="f4" name="f4"></textarea>
+      <label class="f" for="f5"><span class="qcode">F5</span>Brand: accent hex? Font? Logo masters? CAC names? Trademark classes? Licence default? (→ C1–C6)</label><textarea id="f5" name="f5"></textarea>
+      <label class="f" for="f6"><span class="qcode">F6</span>Delivery: trial site? SDR units? Lagos travel + funding? Lab? CAC date? (→ D1–D5)</label><textarea id="f6" name="f6"></textarea>
+      <label class="f" for="f7"><span class="qcode">F7</span>Products: public wording/costs OK? Demo secrets? 2nd-product priority? v2.4.0 label? (→ E1–E5)</label><textarea id="f7" name="f7"></textarea>
+      <label class="f" for="f8"><span class="qcode">F8</span>People: weekly rule? Spending threshold? Inactivity rule? CoC penalties? (→ F3–F6)</label><textarea id="f8" name="f8"></textarea>
+      <label class="f" for="f9"><span class="qcode">F9</span>Legal: MOU term? NDA term? Witnesses (1/2)? Counsel or referral? (→ G1/G3/G5/G6)</label><textarea id="f9" name="f9"></textarea>
+      <label class="f" for="f10"><span class="qcode">F10</span>Equity: confirm splits? Trigger + minimum? Pro-rata? Prize rule? Dual-sign? (→ H1–H6)</label><textarea id="f10" name="f10"></textarea>
+      <label class="f" for="f11"><span class="qcode">F11</span>NDAIE: Team Lead? Schools? Owners? Conflicts + AI wording? Ask slide? (→ I2–I8)</label><textarea id="f11" name="f11"></textarea>
+      <label class="f" for="f12"><span class="qcode">F12</span>Strategy + website: customers? Costs? Revenue? Funding ask? Stack/contact/analytics? (→ J1–J5, K1–K5)</label><textarea id="f12" name="f12"></textarea>
+    </div>
+  </form>
+  </div>
+  <div class="toolbar">
+    <button type="button" class="btn-primary" id="btnSave">Save</button>
+    <button type="button" class="btn-accent" id="btnPrint">Save + Print</button>
+    <button type="button" class="btn-ghost" id="btnExport">Export JSON</button>
+    <button type="button" class="btn-ghost" id="btnCSV">Export CSV</button>
+    <button type="button" class="btn-ghost" id="btnClear">Clear</button>
+    <span id="saveState">Not saved yet.</span>
+  </div>
+</div>
+</div>
+<script>
+(function(){
+  "use strict";
+  var KEY = "bolte-all-member-q-v1";
+  var PHOTO_KEY = KEY + "-photo";
+  var form = document.getElementById("qform");
+  var saveState = document.getElementById("saveState");
+  var photoData = "", photoFileName = "";
+  function fields(){ return Array.prototype.slice.call(form.querySelectorAll("input:not([type=file]):not(#isFounder),select,textarea")); }
+  function collect(){
+    var d = { _form: "bolte-all-member-questionnaire-v1" };
+    fields().forEach(function(el){
+      if(!el.name) return;
+      d[el.name] = (el.type === "checkbox") ? (el.checked ? "YES" : "NO") : el.value;
+    });
+    d._savedAt = new Date().toISOString();
+    d.photoFileName = photoFileName;
+    d.photoDataUrl = photoData;
+    return d;
+  }
+  function apply(d){
+    fields().forEach(function(el){
+      if(!el.name || !(el.name in d)) return;
+      if(el.type === "checkbox") el.checked = (d[el.name] === "YES" || d[el.name] === true);
+      else el.value = d[el.name];
+    });
+    calcAge();
+  }
+  function save(silent){
+    try {
+      localStorage.setItem(KEY, JSON.stringify(collect()));
+      if(!silent) saveState.textContent = "Saved " + new Date().toLocaleString() + " (this browser).";
+    } catch(e){ saveState.textContent = "Save failed: storage unavailable."; }
+  }
+  function calcAge(){
+    var dob = document.getElementById("q5").value, err = document.getElementById("dobErr"), ageEl = document.getElementById("age");
+    err.textContent = ""; ageEl.value = "";
+    if(!dob) return;
+    var b = new Date(dob), now = new Date(), age = now.getFullYear()-b.getFullYear();
+    var m = now.getMonth()-b.getMonth();
+    if(m < 0 || (m === 0 && now.getDate() < b.getDate())) age--;
+    ageEl.value = String(age);
+    if(age < 16 || age > 30) err.textContent = "Note: NDAIE presenters must be 16–30 at application.";
+  }
+  function showPhoto(){
+    var img = document.getElementById("photoPreview");
+    if(photoData){ img.src = photoData; img.style.display = "block"; }
+    else { img.removeAttribute("src"); img.style.display = "none"; }
+    document.getElementById("photoName").textContent = photoFileName || "";
+  }
+  function loadPhoto(){
+    try {
+      var raw = localStorage.getItem(PHOTO_KEY);
+      if(raw){ var o = JSON.parse(raw); photoData = o.data || ""; photoFileName = o.name || ""; showPhoto(); }
+    } catch(e){}
+  }
+  document.getElementById("photo").addEventListener("change", function(ev){
+    var f = ev.target.files && ev.target.files[0];
+    if(!f) return;
+    photoFileName = f.name;
+    var rd = new FileReader();
+    rd.onload = function(){
+      var img = new Image();
+      img.onload = function(){
+        var max = 800, w = img.width, h = img.height;
+        var sc = Math.min(1, max / Math.max(w, h));
+        var c = document.createElement("canvas");
+        c.width = Math.max(1, Math.round(w*sc)); c.height = Math.max(1, Math.round(h*sc));
+        c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+        photoData = c.toDataURL("image/jpeg", 0.82);
+        try { localStorage.setItem(PHOTO_KEY, JSON.stringify({name: photoFileName, data: photoData})); }
+        catch(e){ saveState.textContent = "Portrait too large to store — try a smaller image."; return; }
+        showPhoto();
+        saveState.textContent = "Portrait saved " + new Date().toLocaleTimeString() + ".";
+      };
+      img.src = rd.result;
+    };
+    rd.readAsDataURL(f);
+  });
+  document.getElementById("btnPhotoRemove").addEventListener("click", function(){
+    photoData = ""; photoFileName = "";
+    document.getElementById("photo").value = "";
+    try { localStorage.removeItem(PHOTO_KEY); } catch(e){}
+    showPhoto();
+  });
+  document.getElementById("isFounder").addEventListener("change", function(){
+    document.getElementById("foundersSec").classList.toggle("open", this.checked);
+  });
+  function mark(el, bad){ el.style.borderColor = bad ? "#B00020" : ""; return !bad; }
+  function validate(){
+    var ok = true;
+    document.getElementById("photoErr").textContent = "";
+    document.getElementById("ackErr").textContent = "";
+    document.getElementById("confirmErr").textContent = "";
+    if(!photoData){ document.getElementById("photoErr").textContent = "Please add your professional portrait."; ok = false; }
+    ["pcode","q1","q5","q6","q7","q9","q11","q14","q16","q17","confirmName","confirmDate"].forEach(function(id){
+      var el = document.getElementById(id);
+      if(!mark(el, !el.value)) ok = false;
+    });
+    var em = document.getElementById("q6");
+    if(em.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value)){ mark(em, true); ok = false; }
+    var boxes = ["q24a","q24b","q24c","q24d","q24e"].map(function(id){ return document.getElementById(id).checked; });
+    if(boxes.indexOf(false) !== -1){ document.getElementById("ackErr").textContent = "All five Q24 boxes must be ticked."; ok = false; }
+    var cn = document.getElementById("confirmName"), full = document.getElementById("q1");
+    if(cn.value && full.value && cn.value.trim().toLowerCase() !== full.value.trim().toLowerCase()){
+      document.getElementById("confirmErr").textContent = "Confirmation name should match the full legal name (Q1).";
+      ok = false;
+    }
+    return ok;
+  }
+  function fname(){ return "bolte-questionnaire-" + (document.getElementById("pcode").value || "member").toLowerCase(); }
+  try { var raw = localStorage.getItem(KEY); if(raw){ apply(JSON.parse(raw)); saveState.textContent = "Draft restored from this browser."; } } catch(e){}
+  document.getElementById("confirmDate").value = document.getElementById("confirmDate").value || new Date().toISOString().slice(0,10);
+  form.addEventListener("input", function(){ calcAge(); save(true); saveState.textContent = "Draft autosaved " + new Date().toLocaleTimeString() + "."; });
+  form.addEventListener("change", function(){ calcAge(); save(true); });
+  document.getElementById("btnSave").addEventListener("click", function(){ save(false); });
+  document.getElementById("btnPrint").addEventListener("click", function(){
+    if(!validate()){ saveState.textContent = "Fix highlighted fields before printing."; window.scrollTo(0,0); return; }
+    save(true);
+    saveState.textContent = "Saved " + new Date().toLocaleString() + ". Printing…";
+    setTimeout(function(){ window.print(); }, 150);
+  });
+  document.getElementById("btnExport").addEventListener("click", function(){
+    save(true);
+    var blob = new Blob([JSON.stringify(collect(), null, 2)], {type:"application/json"});
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = fname() + ".json";
+    a.click(); setTimeout(function(){ URL.revokeObjectURL(a.href); }, 2000);
+  });
+  document.getElementById("btnCSV").addEventListener("click", function(){
+    save(true);
+    var d = collect();
+    var rows = [["field","value"]];
+    Object.keys(d).sort().forEach(function(k){
+      if(k === "photoDataUrl"){ rows.push([k, "(image data — see JSON export)"]); return; }
+      var v = String(d[k] == null ? "" : d[k]).replace(/"/g, '""');
+      if(v.search(/["\n,]/) !== -1) v = '"' + v + '"';
+      rows.push([k, v]);
+    });
+    var csv = rows.map(function(r){ return r.join(","); }).join("\r\n");
+    var blob = new Blob([csv], {type:"text/csv"});
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = fname() + ".csv";
+    a.click(); setTimeout(function(){ URL.revokeObjectURL(a.href); }, 2000);
+  });
+  document.getElementById("btnClear").addEventListener("click", function(){
+    if(!confirm("Clear this form and the saved draft on this device?")) return;
+    form.reset(); localStorage.removeItem(KEY);
+    try { localStorage.removeItem(PHOTO_KEY); } catch(e){}
+    photoData = ""; photoFileName = ""; showPhoto(); calcAge();
+    document.getElementById("foundersSec").classList.remove("open");
+    saveState.textContent = "Cleared.";
+  });
+  loadPhoto();
+  calcAge();
+})();
+</script>
+</body>
+</html>

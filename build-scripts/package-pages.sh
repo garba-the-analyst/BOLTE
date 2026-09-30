@@ -17,6 +17,7 @@ cp "$ROOT/projects/BOLTE HFP/HFP-X blueprints/dark-DWG-002.png" "$OUT/vendor/hfp
 cp -r "$ROOT/forms/." "$OUT/forms/"
 grep -rl '\.\./assets/' "$OUT" --include='*.html' | xargs sed -i 's|\.\./assets/|./vendor/|g'
 grep -rl 'projects/BOLTE%20HFP' "$OUT" --include='*.html' | xargs sed -i 's|\.\./projects/BOLTE%20HFP/HFP-X%20blueprints/|./vendor/hfp/|g'
+grep -rl '\.\./forms/' "$OUT" --include='*.html' | xargs sed -i 's|\.\./forms/|./forms/|g'
 sed -i 's|\.\./\.\./\.\./assets/|../../vendor/|g' "$OUT/assets/css/site.css"
 echo "Pages bundle ready: $OUT"
 du -sh "$OUT"
