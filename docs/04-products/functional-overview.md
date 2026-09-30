@@ -1,6 +1,6 @@
 # Products — Functional Overview (user-facing, website source)
 
-Consolidates `projects/*/SPEC.md` + `ARCHITECTURE.md` + `API.md` (plus `BOLTE HFP/` charter/mission docs) into what each product *does for a user*. No internals beyond published briefs. TRL honesty enforced.
+Consolidates `projects/*/SPEC.md` + `ARCHITECTURE.md` + `API.md` (plus `projects/BOLTE HFP/` charter/mission docs) into what each product *does for a user*. No internals beyond published briefs. TRL honesty enforced.
 
 ## AeroPulse-NG — Prototype v2.4.0, TRL 4–5 (flagship)
 - **Users:** secondary-aerodrome ATC-adjacent operators, tactical air-picture users, trainees.

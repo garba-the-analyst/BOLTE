@@ -105,6 +105,11 @@ nav.links a[aria-current="page"]{color:var(--dark-tx);background:var(--dark-card
 ul.tight{padding-left:20px;margin:.5em 0}
 ul.tight li{margin:6px 0}
 
+/* ---------- figures ---------- */
+figure.fig{margin:1em 0}
+figure.fig img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block}
+figure.fig figcaption{margin-top:8px}
+
 /* ---------- tables ---------- */
 table{width:100%;border-collapse:collapse;margin:14px 0;font-size:15px;background:var(--paper)}
 th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}

@@ -24,4 +24,4 @@ Gate: no new build until AeroPulse-NG trial report + treasury review.
 
 | Project | Folder | Domain | Status |
 |---|---|---|---|
-| HFP-X — Human Flight Platform | `BOLTE HFP/` | Piloted VTOL/transition flight, distributed jet propulsion | Concept BL-0.0; Tranche 1 backbone drafts; unmanned-first MVP; stage gates per REQ-HFPX-PGM-003 |
+| HFP-X — Human Flight Platform | `projects/BOLTE HFP/` | Piloted VTOL/transition flight, distributed jet propulsion | Concept BL-0.0; Tranche 1 backbone drafts; unmanned-first MVP; stage gates per REQ-HFPX-PGM-003 |

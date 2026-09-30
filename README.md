@@ -20,8 +20,7 @@ BOLTE/
     07-equity/             # g. Shared profit/equity model
     08-focus-ndaie-2026/   # h. Immediate Focus: NDAIE 2026 competition
     09-strategy/           # Business plan + strategic docs
-  projects/              # Product monorepo: aeropulse-ng + asol + dafv + c4isr-dfe + tbr-hs (README+SPEC each; code later)
-  BOLTE HFP/             # HFP-X Human Flight Platform programme doc tree (34 volumes, active work)
+  projects/              # All projects: aeropulse-ng + asol + dafv + c4isr-dfe + tbr-hs + BOLTE HFP (HFP-X programme tree)
   website/                 # Static multi-page site (7 pages + FUNCTIONAL-SPEC.md) — run via file:// or http.server
   assets/logo-placeholder/ # Brand logo pending — wordmark rules apply
   pdf/                     # Generated PDFs (mirror of docs/ + README + CHANGELOG)
