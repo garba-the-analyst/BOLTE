@@ -1,6 +1,6 @@
 # AeroPulse-NG — Flagship Product Brief
 
-Source: `projects/aeropulse-ng/` codebase (Rust + Tauri host, React 19 + Vite frontend, Python sidecar, DuckDB, SDR ingest).
+Source: [aeropulse-ng](https://github.com/garba-the-analyst/aeropulse-ng) repo (Rust + Tauri host, React 19 + Vite frontend, Python sidecar, DuckDB, SDR ingest).
 
 ## Problem
 Secondary aerodromes/tactical sites lack affordable low-altitude surveillance; imports cost $M, fail in harmattan/outages, miss non-cooperative targets.

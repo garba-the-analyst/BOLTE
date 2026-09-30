@@ -1,6 +1,6 @@
 # ASOL — Product Brief (Concept)
 
-Source: `projects/asol/` (`README.md` + `SPEC.md`). Spec only — no code yet.
+Source: [asol](https://github.com/garba-the-analyst/asol) repo (planning pack: `ARCHITECTURE` + `DATABASE` + `API` + `ROADMAP` + `RISKS`). Spec only — no code yet.
 
 ## Problem
 Armory custody runs on paper ledgers: check-in/out is slow to audit, single-custodian handovers create accountability gaps, and unfit personnel can draw equipment unchecked.

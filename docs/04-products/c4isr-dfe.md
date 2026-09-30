@@ -1,6 +1,6 @@
 # C4ISR-DFE — Product Brief (Concept)
 
-Source: `projects/c4isr-dfe/` (`README.md` + `SPEC.md`). Spec only — no code yet.
+Source: [c4isr-dfe](https://github.com/garba-the-analyst/c4isr-dfe) repo (planning pack: `ARCHITECTURE` + `DATABASE` + `API` + `ROADMAP` + `RISKS`). Spec only — no code yet.
 
 ## Problem
 Tactical vehicles/bunkers lack a unified offline picture — ADS-B, UAV coords, RF bearings, and troop GPS arrive on separate tools and die on lossy links.

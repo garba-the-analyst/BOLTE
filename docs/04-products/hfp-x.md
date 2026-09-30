@@ -1,6 +1,6 @@
 # HFP-X — Product Brief (Concept, programme-scale)
 
-Source: `projects/BOLTE HFP/` programme documentation tree (34 volumes, `README.md` index). Status CONCEPT, configuration BL-0.0 (structure only) — Tranche 1 drafts, not baselined.
+Source: [bolte-hfp](https://github.com/garba-the-analyst/bolte-hfp) repo — programme documentation tree (34 volumes, `README.md` index). Status CONCEPT, configuration BL-0.0 (structure only) — Tranche 1 drafts, not baselined.
 
 ## Problem
 Nigeria has no indigenous piloted-flight capability: personal air mobility and tactical light aviation depend entirely on foreign airframes, propulsion, avionics, and sustainment chains.
@@ -17,7 +17,7 @@ Structured per INCOSE/15288/29148/ARP4754A/4761/DO-178C concepts; regulators (NC
 ## Cost & impact
 Long-horizon sovereign aerospace capability; training/systems-engineering multiplier across all BOLTE projects.
 
-## Drawings (concept, `HFP-X blueprints/`)
+## Drawings (concept, `HFP-X blueprints/` in the repo)
 9-sheet dark drawing set + compiled PDFs (dark + print), dated 2026-09-29, title block "Sheet X of 13":
 | Sheet | Title |
 |---|---|

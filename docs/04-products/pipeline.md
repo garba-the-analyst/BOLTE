@@ -11,12 +11,12 @@ Prioritized against Goals 1/5/7 (defense-first, Nigerian-fit, buildable with 7-p
 
 ## New concept specs (from Specification Overview PDF — spec-only, no code yet)
 
-| Project | Folder | Domain | Next design step |
+| Project | Repo | Domain | Status |
 |---|---|---|---|
-| ASOL — Armory Shift & Ordnance Log | `projects/asol/` | Tactical physical security & ordnance custody | Architecture + DB schema + API from `SPEC.md` |
-| DAFV — Defense Asset & Firmware Verifier | `projects/dafv/` | Supply-chain security & anti-tamper | Manifest format + verification flow |
-| C4ISR-DFE — Tactical C4ISR Data Fusion Engine | `projects/c4isr-dfe/` | Spatial intel & multi-sensor mapping | Telemetry + spatial schema + sync protocol |
-| TBR-HS — Tactical Biometric Radar & Health System | `projects/tbr-hs/` | Vitals telemetry & micro-Doppler | Signal chain + vitals schema + IFF tokens (safety review before human testing) |
+| ASOL — Armory Shift & Ordnance Log | [asol](https://github.com/garba-the-analyst/asol) | Tactical physical security & ordnance custody | Planning pack complete (`ARCHITECTURE` + `DATABASE` + `API` + `ROADMAP` + `RISKS`) |
+| DAFV — Defense Asset & Firmware Verifier | [dafv](https://github.com/garba-the-analyst/dafv) | Supply-chain security & anti-tamper | Planning pack complete |
+| C4ISR-DFE — Tactical C4ISR Data Fusion Engine | [c4isr-dfe](https://github.com/garba-the-analyst/c4isr-dfe) | Spatial intel & multi-sensor mapping | Planning pack complete |
+| TBR-HS — Tactical Biometric Radar & Health System | [tbr-hs](https://github.com/garba-the-analyst/tbr-hs) | Vitals telemetry & micro-Doppler | Planning pack complete (safety review before human testing) |
 
 Gate: no new build until AeroPulse-NG trial report + treasury review.
 
@@ -24,4 +24,4 @@ Gate: no new build until AeroPulse-NG trial report + treasury review.
 
 | Project | Folder | Domain | Status |
 |---|---|---|---|
-| HFP-X — Human Flight Platform | `projects/BOLTE HFP/` | Piloted VTOL/transition flight, distributed jet propulsion | Concept BL-0.0; Tranche 1 backbone drafts; unmanned-first MVP; stage gates per REQ-HFPX-PGM-003 |
+| HFP-X — Human Flight Platform | [bolte-hfp](https://github.com/garba-the-analyst/bolte-hfp) | Piloted VTOL/transition flight, distributed jet propulsion | Concept BL-0.0; Tranche 1 backbone drafts; unmanned-first MVP; stage gates per REQ-HFPX-PGM-003 |

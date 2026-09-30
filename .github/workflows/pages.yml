@@ -9,7 +9,7 @@ on:
       - "assets/animations/**"
       - "assets/logos/**"
       - "forms/**"
-      - "projects/BOLTE HFP/HFP-X blueprints/**"
+      - "website/assets/hfp/**"
       - ".github/workflows/pages.yml"
       - "build-scripts/package-pages.sh"
   workflow_dispatch:

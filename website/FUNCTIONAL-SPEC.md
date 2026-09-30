@@ -5,14 +5,14 @@ Status: approved for static build. Stack: vanilla HTML/CSS/JS, no framework, wor
 ## 1. Goals
 - FR-G1: Public face for BOLTE that states identity, model, products (TRL-honest), roadmap, team (privacy-safe), contact (TBD-safe), legal status.
 - FR-G2: Works offline from disk (`file://`), no build step, no external fonts/CDN/JS.
-- FR-G3: Content sourced 1:1 from `docs/` + `projects/*/SPEC.md`; no invented people, contacts, or capabilities.
+- FR-G3: Content sourced 1:1 from `docs/` + project repos; no invented people, contacts, or capabilities.
 
 ## 2. Information architecture
 | Route | File | Source of truth |
 |---|---|---|
 | `/` Home | `website/index.html` | Video hero (lockup + mission + CTAs + chips) + what-we-do + model/stats band + 6-product tier grid + ethics |
 | About | `website/about.html` | `docs/01-canon/01-identity-vision-mission-aim.md` + Goals 1–7 |
-| Products | `website/products.html` | `docs/04-products/*.md` + `projects/*/SPEC.md` (user-facing functions only, no RF/solver internals beyond published brief) |
+| Products | `website/products.html` | `docs/04-products/*.md` + project repos (user-facing functions only, no RF/solver internals beyond published brief) |
 | Roadmap | `website/roadmap.html` | `docs/03-roadmap/roadmap.md` Phase 0–3 |
 | Team | `website/team.html` | `docs/05-people/org-structure.md` — founders named, 5 members `[TBD]` until consented |
 | Contact | `website/contact.html` | `[TBD domain/email]` + form placeholder (mailto + print, no backend) |

@@ -1,7 +1,0 @@
-Budget line,Low,High,Unit,Basis,Status
-Fuel energy carried,342.0,642.0,MJ,Derived: m_fuel x 42.8,TBC
-Hover fuel flow (REF-CLASS SFC),125.1,170.6,kg/h,Derived: SFC x T_hover,TBC
-Hover endurance (REF-CLASS),2.8,7.2,min,Derived: fuel / flow,TBC
-Cruise drag,,,N,TBD (06.5/06.6),TBD
-Cruise endurance,,,min,TBD (needs drag + installed SFC),TBD
-Battery-electric 5-min hover pack (sanity),~700,~1000,kg,Derived: ~65 kWh @ ~150-200 Wh/kg pack (trade study),REF-CLASS

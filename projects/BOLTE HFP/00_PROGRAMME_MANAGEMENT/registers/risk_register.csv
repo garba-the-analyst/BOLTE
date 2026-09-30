@@ -1,7 +1,0 @@
-Risk ID,Risk,Cause,Effect,Severity,Probability,Mitigation,Owner,Status
-RSK-001,Regulatory path undefined (linked ISS-001),Certification and flight-approval basis TBD,Programme cannot progress to flight activity under proper authority,TBD,TBD,Research regulatory basis and define approval path; track under Vol 25,TBD,OPEN
-RSK-002,Mission and stakeholder vacuum (linked ISS-002),Mission definition and stakeholder requirements not yet baselined,System requirements cannot be written or verified,TBD,TBD,Complete mission and stakeholder drafts and hold SRR gate discipline,TBD,OPEN
-RSK-003,Propulsion trade unresolved (linked ISS-003),Propulsion architecture options not yet decided,Dependent design and verification cannot proceed on a stable basis,TBD,TBD,Record propulsion trade as decision record with revisit conditions,TBD,OPEN
-RSK-004,Control authority shortfall (linked ISS-006),Controllability provisions across flight regimes TBD,Loss of controlled flight,TBD,TBD,Define control-authority requirements and verification provisions,TBD,OPEN
-RSK-005,Energy budget shortfall (linked ISS-007),Energy and endurance provisions TBD,Mission cannot be completed within available energy,TBD,TBD,Define energy-budget requirements and verification provisions,TBD,OPEN
-RSK-006,Recovery effectiveness unproven (linked ISS-008),Recovery provisions and effectiveness TBD,Failure consequence not mitigated,TBD,TBD,Define recovery requirements and verification provisions with safety authority involvement,TBD,OPEN

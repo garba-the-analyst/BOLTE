@@ -1,6 +1,6 @@
 # DAFV — Product Brief (Concept)
 
-Source: `projects/dafv/` (`README.md` + `SPEC.md`). Spec only — no code yet.
+Source: [dafv](https://github.com/garba-the-analyst/dafv) repo (planning pack: `ARCHITECTURE` + `DATABASE` + `API` + `ROADMAP` + `RISKS`). Spec only — no code yet.
 
 ## Problem
 Depots receive hardware/firmware with no local way to prove provenance — tampered or post-MRO-swapped binaries can deploy unchecked.

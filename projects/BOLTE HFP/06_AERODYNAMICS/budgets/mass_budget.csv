@@ -1,9 +1,0 @@
-Budget line,Low,High,Unit,Basis,Status
-Pilot,75.0,95.0,kg,OPERATOR INPUT (TBC),TBC
-"Propulsion modules (5x TJ40-class, dry)",16.5,16.5,kg,REF-CLASS (TBC),TBC
-Airframe / lifting structure,,,kg,No basis (ISS-004 open),TBD
-Avionics / compute / sensors,,,kg,No basis,TBD
-Helmet / HMI / suit,,,kg,No basis,TBD
-Reference-class hardware subtotal (excl. pilot/fuel),27.0,40.0,kg,REF-CLASS (Gravity 27 kg; upper bound TBC),TBC
-Fuel load,8.0,15.0,kg,REF-CLASS (TBC; Gravity-class fuel load order),TBC
-LIFTOFF MASS (reference-class rollup),110.0,150.0,kg,Derived (this script),TBC

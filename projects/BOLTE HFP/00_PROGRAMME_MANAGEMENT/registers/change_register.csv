@@ -1,2 +1,0 @@
-Change ID,Date,Description,Affected Requirements,Affected Subsystems,Affected Interfaces,Affected Verification Evidence,New Baseline
-CHG-001,2026-09-30,"SRR-002 ownership burn-down plan + issue owners/due-gates (no technical baseline change)",REQ-HFPX-SRR-005; REQ-HFPX-SRR-006,Programme,None,None,BL-0.0 (unchanged)

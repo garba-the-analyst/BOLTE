@@ -1,6 +1,0 @@
-Case,Name,Tolerance (PROPOSED TBC),Value,Verdict
-VC6-001,free-fall analytic match,0.0001,8.881784197001252e-14,PASS
-VC6-002,hover position drift,1e-06,0.0,PASS
-VC6-003,quaternion unit-norm error,1e-12,0.0,PASS
-VC6-004,energy relative drift,1e-06,1.3967436277263177e-14,PASS
-VC6-005,euler cross-check displacement,0.5,0.04903324999990488,PASS

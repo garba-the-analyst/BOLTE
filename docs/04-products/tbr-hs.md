@@ -1,6 +1,6 @@
 # TBR-HS — Product Brief (Concept)
 
-Source: `projects/tbr-hs/` (`README.md` + `SPEC.md`). Spec only — no code yet.
+Source: [tbr-hs](https://github.com/garba-the-analyst/tbr-hs) repo (planning pack: `ARCHITECTURE` + `DATABASE` + `API` + `ROADMAP` + `RISKS`). Spec only — no code yet.
 
 ## Problem
 Squad health degrades silently in the field, and through-wall human presence is invisible without a way to separate friend from foe.
