@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BOLTE — Member Information Form (Stage 1)</title>
+<style>
+  :root { --navy:#0A1428; --accent:#2E86DE; --ink:#111; --muted:#5B6B7F; --line:#c9d2e0; --bg:#f4f6fa; }
+  * { box-sizing:border-box; }
+  body { font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); margin:0; }
+  .wrap { max-width:860px; margin:0 auto; padding:24px 16px 64px; }
+  .sheet { background:#fff; border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+  header.brand { background:var(--navy); color:#fff; padding:28px 28px 22px; }
+  header.brand img.logo { max-width:260px; width:60%; height:auto; display:block; margin-bottom:10px; }
+  header.brand h1 { margin:.2em 0 .1em; font-size:24px; letter-spacing:.04em; }
+  header.brand p { margin:.2em 0; color:#B8C2CC; font-size:13px; }
+  .stage { display:inline-block; background:var(--accent); color:#fff; font-size:12px; font-weight:700; padding:3px 12px; border-radius:20px; letter-spacing:.06em; }
+  .body { padding:8px 28px 28px; }
+  h2.sec { font-size:15px; color:var(--navy); border-bottom:2px solid var(--accent); padding-bottom:4px; margin:26px 0 12px; text-transform:uppercase; letter-spacing:.05em; }
+  label.f { display:block; margin:10px 0 2px; font-size:13px; font-weight:600; }
+  label.f small { font-weight:400; color:var(--muted); }
+  input[type=text],input[type=email],input[type=tel],input[type=date],select,textarea { width:100%; padding:9px 10px; font-size:14px; border:1px solid var(--line); border-radius:8px; background:#fff; }
+  textarea { min-height:70px; resize:vertical; }
+  .row { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .row3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; }
+  @media(max-width:640px){ .row,.row3{ grid-template-columns:1fr; } }
+  .hint { font-size:12px; color:var(--muted); }
+  .err { color:#B00020; font-size:12px; min-height:16px; }
+  .notice { background:#f4f8ff; border-left:4px solid var(--accent); padding:10px 14px; font-size:13px; margin:16px 0; }
+  .toolbar { position:sticky; bottom:0; background:#fff; border-top:1px solid var(--line); padding:12px 28px; display:flex; flex-wrap:wrap; gap:10px; }
+  button { font-size:14px; font-weight:700; padding:10px 18px; border-radius:9px; border:1px solid var(--navy); cursor:pointer; }
+  .btn-primary { background:var(--navy); color:#fff; }
+  .btn-accent { background:var(--accent); border-color:var(--accent); color:#fff; }
+  .btn-ghost { background:#fff; color:var(--navy); }
+  #saveState { font-size:12px; color:var(--muted); align-self:center; }
+  .req::after { content:" *"; color:#B00020; }
+  @media print {
+    body { background:#fff; }
+    .wrap { max-width:100%; padding:0; }
+    .sheet { border:none; border-radius:0; }
+    .toolbar, .noprint, #saveState { display:none !important; }
+    header.brand { background:#fff !important; color:#000; border-bottom:3px solid var(--navy); }
+    header.brand p { color:#333; }
+    header.brand img.logo { max-width:220px; }
+    .body { padding:0 4px; }
+    input,select,textarea { border:none; border-bottom:1px solid #999; border-radius:0; padding:4px 0; }
+    textarea { min-height:40px; }
+    h2.sec { break-after:avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="sheet">
+  <header class="brand">
+    <img class="logo" src="../assets/logo-placeholder/bolte-lockup-dark.png" alt="" onerror="this.remove()">
+    <span class="stage">STAGE 1 — INFORMATION ONLY</span>
+    <h1>BOLTE — Member Information Form</h1>
+    <p>Research, engineering &amp; technology company &nbsp;•&nbsp; Co-founders: Abdullahi Garba &amp; Essien Frances</p>
+    <p class="noprint">Information gathering only — <b>no agreements, no legal commitments.</b> Fill → <b>Save</b> (stored in this browser) → <b>Print / Save as PDF</b> and submit to the co-founders. Nothing leaves this device until you print or export it.</p>
+  </header>
+  <div class="body">
+  <div class="notice noprint">This form transfers <b>no rights</b> and creates <b>no obligations</b>. Agreements (Code of Conduct, NDA, IP assignment, profit model) come later in the Stage 2 onboarding form, signed separately.</div>
+  <form id="infoform" novalidate>
+    <h2 class="sec">A — Personal details</h2>
+    <label class="f req" for="fullName">Full legal name</label>
+    <input type="text" id="fullName" name="fullName" autocomplete="name" required>
+    <div class="row">
+      <div><label class="f req" for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" required></div>
+      <div><label class="f req" for="phone">Phone / WhatsApp</label><input type="tel" id="phone" name="phone" autocomplete="tel" required></div>
+    </div>
+    <div class="row3">
+      <div><label class="f req" for="dob">Date of birth</label><input type="date" id="dob" name="dob" required><div class="err" id="dobErr"></div></div>
+      <div><label class="f" for="age">Age at today (auto)</label><input type="text" id="age" name="age" readonly tabindex="-1"></div>
+      <div><label class="f" for="city">City / State</label><input type="text" id="city" name="city" placeholder="e.g. Abuja, FCT"></div>
+    </div>
+    <label class="f" for="address">Residential address <small>(for records)</small></label>
+    <input type="text" id="address" name="address">
+    <label class="f req" for="photo">Professional portrait <small>(headshot you wish BOLTE to use — JPG/PNG)</small></label>
+    <input type="file" id="photo" class="noprint" accept="image/*">
+    <div><img id="photoPreview" alt="Portrait preview" style="display:none;max-width:160px;margin-top:8px;border:1px solid var(--line);border-radius:8px;"></div>
+    <div style="margin-top:6px;"><button type="button" class="btn-ghost noprint" id="btnPhotoRemove">Remove photo</button> <span class="hint" id="photoName"></span></div>
+    <div class="err" id="photoErr"></div>
+
+    <h2 class="sec">B — Student status</h2>
+    <div class="row">
+      <div><label class="f req" for="school">School / institution</label><input type="text" id="school" name="school" required></div>
+      <div><label class="f" for="matric">Matric / admission / student ID</label><input type="text" id="matric" name="matric"></div>
+    </div>
+    <div class="row">
+      <div><label class="f req" for="level">Level / program</label><input type="text" id="level" name="level" placeholder="e.g. 300L Electrical Engineering" required></div>
+      <div><label class="f req" for="enrolled">Currently enrolled?</label>
+        <select id="enrolled" name="enrolled" required><option value="">— select —</option><option>Yes</option><option>No</option></select></div>
+    </div>
+    <p class="hint">Needed for NDAIE eligibility (presenters must be 16–30 and enrolled). Providing it here does not register you for anything.</p>
+
+    <h2 class="sec">C — Skills, interests &amp; availability</h2>
+    <label class="f req" for="skills">Core skills <small>(e.g. embedded, RF, Python, CAD, design, ops)</small></label>
+    <textarea id="skills" name="skills" required></textarea>
+    <label class="f" for="interests">Areas you most want to work on</label>
+    <textarea id="interests" name="interests" placeholder="e.g. avionics, field trials, comms"></textarea>
+    <div class="row">
+      <div><label class="f req" for="seat1">Seat interest (1st choice)</label>
+        <select id="seat1" name="seat1" required><option value="">— select —</option><option>Treasurer</option><option>Product / Operations Manager</option><option>Builder — RF / Avionics</option><option>Builder — Software</option><option>Builder — Hardware / Embedded</option><option>Builder — Research / Design / Comms</option></select></div>
+      <div><label class="f" for="seat2">Seat interest (2nd choice)</label>
+        <select id="seat2" name="seat2"><option value="">— select —</option><option>Treasurer</option><option>Product / Operations Manager</option><option>Builder — RF / Avionics</option><option>Builder — Software</option><option>Builder — Hardware / Embedded</option><option>Builder — Research / Design / Comms</option></select></div>
+    </div>
+    <div class="row">
+      <div><label class="f" for="hours">Weekly hours you can give</label><input type="text" id="hours" name="hours" placeholder="e.g. 8 hrs/week"></div>
+      <div><label class="f" for="compete">Available for NDAIE video (14 Oct), semi (28 Oct), finals Lagos (27 Nov)?</label>
+        <select id="compete" name="compete"><option value="">— select —</option><option>Yes — all stages</option><option>Partial (state limits below)</option><option>No</option></select></div>
+    </div>
+    <label class="f" for="limits">Availability notes / constraints</label>
+    <input type="text" id="limits" name="limits">
+
+    <h2 class="sec">D — Background (records only)</h2>
+    <label class="f" for="background">Relevant background <small>(prior projects, tools, experience — records only, transfers no rights)</small></label>
+    <textarea id="background" name="background"></textarea>
+    <label class="f" for="links">Links <small>(portfolio, GitHub, certificates — optional)</small></label>
+    <input type="text" id="links" name="links">
+    <label class="f" for="emergency">Emergency contact <small>(name + phone)</small></label>
+    <input type="text" id="emergency" name="emergency">
+
+    <h2 class="sec">E — Confirmation</h2>
+    <p class="hint">Confirm the information above is complete and correct to the best of your knowledge. This is <b>not</b> a legal agreement.</p>
+    <div class="row">
+      <div><label class="f req" for="confirmName">Confirmed by (type full name)</label><input type="text" id="confirmName" name="confirmName" required></div>
+      <div><label class="f req" for="confirmDate">Date</label><input type="date" id="confirmDate" name="confirmDate" required></div>
+    </div>
+    <div class="err" id="ackErr"></div>
+  </form>
+  </div>
+  <div class="toolbar">
+    <button type="button" class="btn-primary" id="btnSave">Save</button>
+    <button type="button" class="btn-accent" id="btnPrint">Save + Print</button>
+    <button type="button" class="btn-ghost" id="btnExport">Export JSON</button>
+    <button type="button" class="btn-ghost" id="btnCSV">Export CSV</button>
+    <button type="button" class="btn-ghost" id="btnClear">Clear</button>
+    <span id="saveState">Not saved yet.</span>
+  </div>
+</div>
+</div>
+<script>
+(function(){
+  "use strict";
+  var KEY = "bolte-member-info-v1";
+  var form = document.getElementById("infoform");
+  var saveState = document.getElementById("saveState");
+  function fields(){ return Array.prototype.slice.call(form.querySelectorAll("input:not([type=file]),select,textarea")); }
+  function collect(){
+    var d = {};
+    fields().forEach(function(el){ if(el.name) d[el.name] = el.value; });
+    d._savedAt = new Date().toISOString();
+    d._form = "bolte-member-info-stage1";
+    d.photoFileName = photoFileName;
+    d.photoDataUrl = photoData;
+    return d;
+  }
+  function apply(d){
+    fields().forEach(function(el){ if(el.name && (el.name in d)) el.value = d[el.name]; });
+    calcAge();
+  }
+  function save(silent){
+    try {
+      localStorage.setItem(KEY, JSON.stringify(collect()));
+      if(!silent) saveState.textContent = "Saved " + new Date().toLocaleString() + " (this browser).";
+    } catch(e){ saveState.textContent = "Save failed: storage unavailable."; }
+  }
+  function calcAge(){
+    var dob = document.getElementById("dob").value, err = document.getElementById("dobErr"), ageEl = document.getElementById("age");
+    err.textContent = ""; ageEl.value = "";
+    if(!dob) return;
+    var b = new Date(dob), now = new Date(), age = now.getFullYear()-b.getFullYear();
+    var m = now.getMonth()-b.getMonth();
+    if(m < 0 || (m === 0 && now.getDate() < b.getDate())) age--;
+    ageEl.value = String(age);
+    if(age < 16 || age > 30) err.textContent = "Note: NDAIE presenters must be 16–30 at application.";
+  }
+  var photoData = "", photoFileName = "";
+  var PHOTO_KEY = KEY + "-photo";
+  function showPhoto(){
+    var img = document.getElementById("photoPreview");
+    if(photoData){ img.src = photoData; img.style.display = "block"; }
+    else { img.removeAttribute("src"); img.style.display = "none"; }
+    document.getElementById("photoName").textContent = photoFileName || "";
+  }
+  function loadPhoto(){
+    try {
+      var raw = localStorage.getItem(PHOTO_KEY);
+      if(raw){ var o = JSON.parse(raw); photoData = o.data || ""; photoFileName = o.name || ""; showPhoto(); }
+    } catch(e){}
+  }
+  document.getElementById("photo").addEventListener("change", function(ev){
+    var f = ev.target.files && ev.target.files[0];
+    if(!f) return;
+    photoFileName = f.name;
+    var rd = new FileReader();
+    rd.onload = function(){
+      var img = new Image();
+      img.onload = function(){
+        var max = 800, w = img.width, h = img.height;
+        var sc = Math.min(1, max / Math.max(w, h));
+        var c = document.createElement("canvas");
+        c.width = Math.max(1, Math.round(w*sc)); c.height = Math.max(1, Math.round(h*sc));
+        c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+        photoData = c.toDataURL("image/jpeg", 0.82);
+        try { localStorage.setItem(PHOTO_KEY, JSON.stringify({name: photoFileName, data: photoData})); }
+        catch(e){ saveState.textContent = "Portrait too large to store — try a smaller image."; return; }
+        showPhoto();
+        saveState.textContent = "Portrait saved " + new Date().toLocaleTimeString() + ".";
+      };
+      img.src = rd.result;
+    };
+    rd.readAsDataURL(f);
+  });
+  document.getElementById("btnPhotoRemove").addEventListener("click", function(){
+    photoData = ""; photoFileName = "";
+    document.getElementById("photo").value = "";
+    try { localStorage.removeItem(PHOTO_KEY); } catch(e){}
+    showPhoto();
+  });
+  function validate(){
+    var ok = true, ackErr = document.getElementById("ackErr");
+    ackErr.textContent = "";
+    document.getElementById("photoErr").textContent = "";
+    if(!photoData){ document.getElementById("photoErr").textContent = "Please add your professional portrait."; ok = false; }
+    ["fullName","email","phone","dob","school","level","enrolled","skills","seat1","confirmName","confirmDate"].forEach(function(id){
+      var el = document.getElementById(id);
+      el.style.borderColor = "";
+      if(!el.value){ el.style.borderColor = "#B00020"; ok = false; }
+    });
+    var em = document.getElementById("email");
+    if(em.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value)){ em.style.borderColor = "#B00020"; ok = false; }
+    var cn = document.getElementById("confirmName"), full = document.getElementById("fullName");
+    if(cn.value && full.value && cn.value.trim().toLowerCase() !== full.value.trim().toLowerCase()){
+      ackErr.textContent = "Confirmation name should match the full legal name.";
+      ok = false;
+    }
+    return ok;
+  }
+  try { var raw = localStorage.getItem(KEY); if(raw){ apply(JSON.parse(raw)); saveState.textContent = "Draft restored from this browser."; } } catch(e){}
+  document.getElementById("confirmDate").value = document.getElementById("confirmDate").value || new Date().toISOString().slice(0,10);
+  form.addEventListener("input", function(){ calcAge(); save(true); saveState.textContent = "Draft autosaved " + new Date().toLocaleTimeString() + "."; });
+  form.addEventListener("change", function(){ calcAge(); save(true); });
+  document.getElementById("btnSave").addEventListener("click", function(){ save(false); });
+  document.getElementById("btnPrint").addEventListener("click", function(){
+    if(!validate()){ saveState.textContent = "Fix highlighted fields before printing."; window.scrollTo(0,0); return; }
+    save(true);
+    saveState.textContent = "Saved " + new Date().toLocaleString() + ". Printing…";
+    setTimeout(function(){ window.print(); }, 150);
+  });
+  document.getElementById("btnExport").addEventListener("click", function(){
+    save(true);
+    var blob = new Blob([JSON.stringify(collect(), null, 2)], {type:"application/json"});
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "bolte-info-" + (document.getElementById("fullName").value || "member").replace(/\s+/g,"-").toLowerCase() + ".json";
+    a.click(); setTimeout(function(){ URL.revokeObjectURL(a.href); }, 2000);
+  });
+  document.getElementById("btnCSV").addEventListener("click", function(){
+    save(true);
+    var d = collect();
+    var rows = [["field","value"]];
+    Object.keys(d).sort().forEach(function(k){
+      if(k === "photoDataUrl"){ rows.push([k, "(image data — see JSON export)"]); return; }
+      var v = String(d[k] == null ? "" : d[k]).replace(/"/g, '""');
+      if(v.search(/["\n,]/) !== -1) v = '"' + v + '"';
+      rows.push([k, v]);
+    });
+    var csv = rows.map(function(r){ return r.join(","); }).join("\r\n");
+    var blob = new Blob([csv], {type:"text/csv"});
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "bolte-info-" + (document.getElementById("fullName").value || "member").replace(/\s+/g,"-").toLowerCase() + ".csv";
+    a.click(); setTimeout(function(){ URL.revokeObjectURL(a.href); }, 2000);
+  });
+  document.getElementById("btnClear").addEventListener("click", function(){
+    if(!confirm("Clear this form and the saved draft on this device?")) return;
+    form.reset(); localStorage.removeItem(KEY);
+    try { localStorage.removeItem(PHOTO_KEY); } catch(e){}
+    photoData = ""; photoFileName = ""; showPhoto(); calcAge();
+    saveState.textContent = "Cleared.";
+  });
+  loadPhoto();
+  calcAge();
+})();
+</script>
+</body>
+</html>

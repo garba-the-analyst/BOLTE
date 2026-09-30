@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Products — BOLTE</title>
+<meta name="description" content="AeroPulse-NG prototype plus ASOL, DAFV, C4ISR-DFE, TBR-HS concepts and the HFP-X flight programme. TRL-honest functional summaries.">
+<link rel="icon" type="image/png" href="../assets/logo-placeholder/bolte-mark-dark.png">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<header class="site"><div class="nav">
+<a class="brand" href="index.html"><img data-logo src="../assets/logo-placeholder/bolte-lockup-dark.png" alt="BOLTE"><span class="sr">BOLTE</span></a>
+<input type="checkbox" id="navtoggle" class="navcheck">
+<label for="navtoggle" class="burger" aria-label="Menu"><span></span><span></span><span></span></label>
+<nav class="links" aria-label="Primary"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="roadmap.html">Roadmap</a><a href="team.html">Team</a><a href="contact.html">Contact</a><a href="legal.html">Legal</a></nav>
+</div></header>
+<main>
+<section class="pagehero"><div class="wrap">
+<p class="eyebrow">Products</p>
+<h1>What we build</h1>
+<p>One bench prototype, four spec-only concepts, one programme-scale concept. Every stage stated honestly. Source: <code>docs/04-products/functional-overview.md</code>.</p>
+</div></section>
+<section class="section"><div class="wrap">
+<div class="notice">TRL honesty: AeroPulse-NG is a bench prototype (TRL 4–5). ASOL, DAFV, C4ISR-DFE, TBR-HS are <strong>spec-only concepts (TRL 1–2)</strong> — no code, gated until AeroPulse trial + treasury review. HFP-X is a <strong>programme-scale concept (BL-0.0, structure only)</strong> on a separate evidence-gated track.</div>
+<div class="card pcard t-proto" id="aeropulse"><h2>AeroPulse-NG <span class="badge b-proto">Prototype v2.4.0 · TRL 4–5</span></h2>
+<dl class="meta"><div><dt>Users</dt><dd>Secondary-aerodrome operators, tactical air-picture users, trainees.</dd></div>
+<div><dt>Does</dt><dd>1090 MHz ADS-B/Mode S + 131.55 MHz ACARS ingest → decode → 6-state filter + dead reckoning → STCA advisory (Doc 4444 5NM/1000ft) → 3-source weather fusion → defence overlays (7500/7600/7700, dark/silence, geofence, intercept solver) → dual-window display + headless console + DuckDB record + synthetic-feed demo.</dd></div>
+<div><dt>Offline</dt><dd>Air-gapped by contract; sim == live path; deterministic replay.</dd></div>
+<div><dt>Limits</dt><dd>Synthesized FFT now, real RTL-SDR I/Q next; single-site; cooperative targets primarily.</dd></div></dl></div>
+<div class="card pcard t-concept" id="asol"><h2>ASOL — Armory Shift &amp; Ordnance Log <span class="badge b-concept">Concept · spec-only</span></h2>
+<dl class="meta"><div><dt>Users</dt><dd>Armorer, duty officer, auditor.</dd></div>
+<div><dt>Does</dt><dd>Register → check-out (dual-custodian + fresh liveness) → check-in → shift handover (dual signatures + count reconcile) → quarantine/dispose → signed export + <code>verify_chain</code>.</dd></div>
+<div><dt>Offline</dt><dd>SQLCipher AES-256, hash-chained journal, removable-media export.</dd></div></dl></div>
+<div class="card pcard t-concept" id="dafv"><h2>DAFV — Defense Asset &amp; Firmware Verifier <span class="badge b-concept">Concept · spec-only</span></h2>
+<dl class="meta"><div><dt>Users</dt><dd>Depot receiving-dock auditor.</dd></div>
+<div><dt>Does</dt><dd>Acquire (JTAG/UART/USB/file) → BLAKE3 + SHA-256 → Ed25519 manifest verify → RFID bind → PASS/FAIL/INCONCLUSIVE + evidence → signed report. Never auto-flashes.</dd></div>
+<div><dt>Offline</dt><dd>Static Rust binary, local trust roots.</dd></div></dl></div>
+<div class="card pcard t-concept" id="c4isr"><h2>C4ISR-DFE — Data Fusion Engine <span class="badge b-concept">Concept · spec-only</span></h2>
+<dl class="meta"><div><dt>Users</dt><dd>Vehicle/bunker command.</dd></div>
+<div><dt>Does</dt><dd>ADS-B / UAV coords / RF bearings / GPS tracks → TrackReport → associate/track/coast → events → offline MBTiles map → protobuf UDP delta mesh → snapshot export.</dd></div>
+<div><dt>Offline</dt><dd>On-device tiles, store-and-forward, sequenced idempotent deltas.</dd></div></dl></div>
+<div class="card pcard t-safety" id="tbr"><h2>TBR-HS — Biometric Radar &amp; Health System <span class="badge b-safety">Concept · safety-gated</span></h2>
+<dl class="meta"><div><dt>Users</dt><dd>Squad + medic (advisory only).</dd></div>
+<div><dt>Does</dt><dd>BLE/UWB → Butterworth + FFT → vitals (STABLE/WATCH/URGENT) + radar motion (NO_MOTION/POSSIBLE/MOTION + arc/SNR) → Ed25519 IFF → 60–180° HUD + encrypted log.</dd></div>
+<div><dt>Safety</dt><dd>Phantoms before people; no human contact until safety/ethics review + both-founders sign-off.</dd></div></dl></div>
+<div class="card pcard t-program" id="hfpx"><h2>HFP-X — Human Flight Platform <span class="badge b-program">Programme concept · BL-0.0</span></h2>
+<dl class="meta"><div><dt>Users</dt><dd>Test pilots (long-term), ground crew, ground station, regulators, test range.</dd></div>
+<div><dt>Does</dt><dd>Prone/semi-prone piloted VTOL/transition flight — vertical take-off → hover → transition ↔ cruise → landing across 15 mission modes + emergency recovery; distributed jet propulsion (arm/rear-torso/ankle modules), fly-by-wire, smart helmet/HUD, continuous ground-station telemetry.</dd></div>
+<div><dt>Programme</dt><dd>34-volume doc tree + separate unmanned-first MVP demonstrator; human flight only after unmanned hover/transition/cruise evidence gates.</dd></div>
+<div><dt>Limits</dt><dd>All performance values TBD, no design selected, nothing claimed standards-compliant.</dd></div></dl></div>
+</div></section>
+</main>
+<footer class="site"><div class="wrap">
+<nav aria-label="Footer"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="roadmap.html">Roadmap</a><a href="team.html">Team</a><a href="contact.html">Contact</a><a href="legal.html">Legal</a></nav>
+<p>BOLTE · Pre-CAC · Functional source: <code>docs/04-products/</code> + <code>projects/*/SPEC.md</code> · © <span data-year>2026</span></p>
+</div></footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

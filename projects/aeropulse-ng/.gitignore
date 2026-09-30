@@ -1,0 +1,32 @@
+# Rust / Tauri
+src-tauri/target/
+src-tauri/gen/
+
+# Node
+node_modules/
+dist/
+*.local
+
+# Python
+python-sidecar/venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Local runtime artifacts
+*.duckdb
+*.duckdb.wal
+*.log
+
+# Raw RF archives — local only, never commit (canonical: acas.csv.gz, operations.csv.gz)
+datasources/
+data/real/
+*.csv.gz
+*.csv
+*.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

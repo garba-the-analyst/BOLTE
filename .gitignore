@@ -1,0 +1,30 @@
+# BOLTE — root gitignore. Docs, specs, site and assets are committed.
+# Regenerable bulk and local-only data stay out (reinstall/fetch locally).
+
+# Deps & build outputs (reproducible via npm / cargo / pip)
+**/node_modules/
+**/dist/
+**/src-tauri/target/
+**/src-tauri/gen/
+**/python-sidecar/venv/
+**/__pycache__/
+**/.pytest_cache/
+*.pyc
+*.local
+
+# AeroPulse-NG local-only data (raw RF archives, live captures, runtime DBs)
+projects/aeropulse-ng/datasources/
+projects/aeropulse-ng/data/real/
+projects/aeropulse-ng/**/*.csv.gz
+projects/aeropulse-ng/**/*.csv
+projects/aeropulse-ng/**/*.zip
+projects/aeropulse-ng/**/*.duckdb
+projects/aeropulse-ng/**/*.duckdb.wal
+projects/aeropulse-ng/**/*.log
+
+# Local Pages preview bundle (see build-scripts/package-pages.sh)
+_pages/
+
+# OS / editor
+.DS_Store
+Thumbs.db

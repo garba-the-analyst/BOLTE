@@ -1,0 +1,87 @@
+name: Build Windows
+
+on:
+  push:
+    branches: [main, master]
+    tags: ["v*"]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+# Default read-only; release job escalates only on tag via job-level override.
+permissions:
+  contents: read
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    # Needs write only when creating a draft release on tag; for PR/branch this is effectively read.
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Rust cache
+        uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: src-tauri -> target
+
+      - name: Install frontend deps
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Rust tests (engine, air-gap default)
+        run: cargo test --manifest-path src-tauri/Cargo.toml --no-default-features
+
+      - name: Python sidecar tests
+        run: |
+          pip install duckdb pyserial pytest
+          python -m pytest python-sidecar/tests -q
+
+      - name: Build frontend
+        run: npm run build
+
+      # Draft release: only on version tags. Depends on Build Verification passing (branch protection requires it).
+      - name: Build Tauri (Windows) — release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tagName: ${{ github.ref_name }}
+          releaseName: "AeroPulse-NG ${{ github.ref_name }}"
+          releaseBody: "Windows build for ${{ github.sha }}"
+          releaseDraft: true
+          prerelease: false
+          args: --verbose
+
+      # Plain build for branches/PRs: no release, just compile and upload artifact.
+      - name: Build Tauri (Windows) — artifact only
+        if: "!startsWith(github.ref, 'refs/tags/v')"
+        run: npx tauri build --verbose
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload MSI/EXE artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-installers
+          path: |
+            src-tauri/target/release/bundle/**/*.msi
+            src-tauri/target/release/bundle/**/*.exe
+            src-tauri/target/release/*.exe
+          if-no-files-found: warn
+          retention-days: 14

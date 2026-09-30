@@ -1,0 +1,19 @@
+/* BOLTE PDF print stylesheet — dark-on-light for print readability with brand accents */
+@page { size: A4; margin: 20mm 18mm 22mm 18mm; }
+html { font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #111; }
+body { max-width: 100%; line-height: 1.6; font-size: 11.5pt; }
+h1 { font-size: 22pt; border-bottom: 3px solid #2E86DE; padding-bottom: 6px; color: #000; letter-spacing: .02em; }
+h2 { font-size: 15pt; color: #0b3d91; border-bottom: 1px solid #d0d7e3; padding-bottom: 4px; margin-top: 1.4em; }
+h3 { font-size: 12.5pt; color: #111; }
+a { color: #0b3d91; }
+code { font-family: ui-monospace, "Cascadia Code", Menlo, Consolas, monospace; font-size: 9.5pt; background: #f2f4f8; padding: 1px 4px; border-radius: 4px; }
+pre { background: #f2f4f8; padding: 12px; border-radius: 8px; border: 1px solid #dfe5ee; overflow-x: auto; }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 10pt; }
+th, td { border: 1px solid #b9c2d0; padding: 6px 8px; text-align: left; }
+th { background: #e8eefb; }
+blockquote { border-left: 4px solid #2E86DE; margin: 12px 0; padding: 8px 14px; background: #f4f8ff; color: #222; }
+.pdf-header { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #000; padding-bottom: 6px; margin-bottom: 18px; }
+.pdf-header .brand { font-weight: 800; letter-spacing: .08em; font-size: 16pt; }
+.pdf-header .sub { color: #2E86DE; font-size: 9pt; font-weight: 600; }
+.pdf-footer { margin-top: 28px; border-top: 1px solid #999; padding-top: 6px; font-size: 8.5pt; color: #555; display: flex; justify-content: space-between; }

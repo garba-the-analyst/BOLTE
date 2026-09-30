@@ -1,0 +1,1421 @@
+# BOLTE HFP-X
+
+## Human Flight Platform — Production Engineering Documentation Suite
+
+### Recommended document hierarchy
+
+```text
+HFP-X PROGRAMME
+│
+├── VOLUME 00 — Programme & Configuration Management
+├── VOLUME 01 — Mission, Concept & System Requirements
+├── VOLUME 02 — System Architecture
+├── VOLUME 03 — Airframe & Structural Engineering
+├── VOLUME 04 — Propulsion System
+├── VOLUME 05 — Fuel & Fuel Management System
+├── VOLUME 06 — Aerodynamics & Flight Mechanics
+├── VOLUME 07 — Flight Control System
+├── VOLUME 08 — Avionics & Embedded Computing
+├── VOLUME 09 — Navigation, Sensors & Instrumentation
+├── VOLUME 10 — Smart Helmet & Human-Machine Interface
+├── VOLUME 11 — Communications & Telemetry
+├── VOLUME 12 — Pilot Suit & Human Integration
+├── VOLUME 13 — Safety, Emergency & Recovery Systems
+├── VOLUME 14 — Thermal & Environmental Management
+├── VOLUME 15 — Electrical Power & Distribution
+├── VOLUME 16 — Software & Firmware Engineering
+├── VOLUME 17 — Cybersecurity
+├── VOLUME 18 — AI / Intelligent Systems
+├── VOLUME 19 — Simulation & Digital Engineering
+├── VOLUME 20 — Manufacturing & Industrialisation
+├── VOLUME 21 — Assembly, Integration & Installation
+├── VOLUME 22 — Verification & Validation
+├── VOLUME 23 — Ground & Flight Test Programme
+├── VOLUME 24 — Reliability, Maintainability & Safety
+├── VOLUME 25 — Airworthiness & Certification
+├── VOLUME 26 — Operations & Pilot Procedures
+├── VOLUME 27 — Maintenance & Logistics
+├── VOLUME 28 — Production Quality & Configuration Control
+├── VOLUME 29 — Technical Data & Illustrated Parts Catalogue
+├── VOLUME 30 — Training & Human Factors
+├── VOLUME 31 — Product Variants & Mission Systems
+├── VOLUME 32 — Lifecycle Management & Sustainment
+└── VOLUME 33 — MVP / Prototype Development Programme
+```
+
+Below is the chapter-level structure I'd use.
+
+---
+
+# VOLUME 00
+
+# PROGRAMME & CONFIGURATION MANAGEMENT
+
+### 00.1 Programme Charter
+
+### 00.2 Project Governance
+
+### 00.3 Organisation & Responsibilities
+
+### 00.4 Systems Engineering Management Plan
+
+### 00.5 Development Lifecycle
+
+### 00.6 Development Phases & Gates
+
+### 00.7 Configuration Management
+
+### 00.8 Document Management
+
+### 00.9 Requirements Management
+
+### 00.10 Change Management
+
+### 00.11 Interface Management
+
+### 00.12 Risk Management
+
+### 00.13 Supplier Management
+
+### 00.14 Design Reviews
+
+### 00.15 Technical Data Management
+
+### 00.16 Engineering Decision Records
+
+---
+
+# VOLUME 01
+
+# MISSION, CONCEPT & SYSTEM REQUIREMENTS
+
+### 01.1 Mission Definition
+
+### 01.2 Operational Concept
+
+### 01.3 Concept of Operations — CONOPS
+
+### 01.4 Stakeholder Requirements
+
+### 01.5 User Requirements
+
+### 01.6 System Requirements
+
+### 01.7 Functional Requirements
+
+### 01.8 Performance Requirements
+
+### 01.9 Environmental Requirements
+
+### 01.10 Safety Requirements
+
+### 01.11 Human Factors Requirements
+
+### 01.12 Reliability Requirements
+
+### 01.13 Maintainability Requirements
+
+### 01.14 Security Requirements
+
+### 01.15 Regulatory Requirements
+
+### 01.16 Interface Requirements
+
+### 01.17 Derived Requirements
+
+### 01.18 Requirements Traceability Matrix
+
+---
+
+# VOLUME 02
+
+# SYSTEM ARCHITECTURE
+
+### 02.1 System Architecture Description
+
+### 02.2 Functional Architecture
+
+### 02.3 Physical Architecture
+
+### 02.4 Logical Architecture
+
+### 02.5 Hardware Architecture
+
+### 02.6 Software Architecture
+
+### 02.7 Avionics Architecture
+
+### 02.8 Propulsion Architecture
+
+### 02.9 Power Architecture
+
+### 02.10 Safety Architecture
+
+### 02.11 Data Architecture
+
+### 02.12 Control Architecture
+
+### 02.13 Communications Architecture
+
+### 02.14 Recovery Architecture
+
+### 02.15 Human-System Architecture
+
+### 02.16 System Interfaces
+
+### 02.17 Interface Control Documents
+
+---
+
+# VOLUME 03
+
+# AIRFRAME & STRUCTURAL ENGINEERING
+
+### 03.1 Airframe Architecture
+
+### 03.2 Structural Design Philosophy
+
+### 03.3 Primary Structure
+
+### 03.4 Secondary Structure
+
+### 03.5 Pilot Load-Bearing Structure
+
+### 03.6 Propulsion Mounting Structures
+
+### 03.7 Wing / Lifting-Body Structure
+
+### 03.8 Landing / Ground-Handling Structure
+
+### 03.9 Fasteners & Joints
+
+### 03.10 Materials
+
+### 03.11 Composite Structures
+
+### 03.12 Metallic Structures
+
+### 03.13 Structural Loads
+
+### 03.14 Static Strength
+
+### 03.15 Fatigue
+
+### 03.16 Damage Tolerance
+
+### 03.17 Vibration
+
+### 03.18 Structural Dynamics
+
+### 03.19 Thermal-Structural Interaction
+
+### 03.20 Structural Testing
+
+---
+
+# VOLUME 04
+
+# PROPULSION SYSTEM
+
+### 04.1 Propulsion System Requirements
+
+### 04.2 Propulsion Architecture
+
+### 04.3 Turbine Architecture
+
+### 04.4 Microturbine Modules
+
+### 04.5 Arm Propulsion Modules
+
+### 04.6 Rear Propulsion Modules
+
+### 04.7 Ankle Propulsion Modules
+
+### 04.8 Thrust Vectoring
+
+### 04.9 Propulsion Control
+
+### 04.10 Engine Instrumentation
+
+### 04.11 Engine Monitoring
+
+### 04.12 Engine Thermal Management
+
+### 04.13 Propulsion Redundancy
+
+### 04.14 Propulsion Fault Detection
+
+### 04.15 Propulsion Emergency Modes
+
+### 04.16 Propulsion Integration
+
+### 04.17 Propulsion Ground Testing
+
+---
+
+# VOLUME 05
+
+# FUEL & FUEL MANAGEMENT SYSTEM
+
+### 05.1 Fuel Requirements
+
+### 05.2 Fuel Selection
+
+### 05.3 Fuel Tank Architecture
+
+### 05.4 Fuel Storage
+
+### 05.5 Fuel Distribution
+
+### 05.6 Fuel Pumps
+
+### 05.7 Filtration
+
+### 05.8 Fuel Metering
+
+### 05.9 Fuel Injection
+
+### 05.10 Fuel Quantity Measurement
+
+### 05.11 Fuel Pressure Monitoring
+
+### 05.12 Fuel Temperature Monitoring
+
+### 05.13 Leak Detection
+
+### 05.14 Fuel Isolation
+
+### 05.15 Fuel System Safety
+
+### 05.16 Fuel System Testing
+
+### 05.17 Refuelling / Defuelling
+
+---
+
+# VOLUME 06
+
+# AERODYNAMICS & FLIGHT MECHANICS
+
+### 06.1 Aerodynamic Concept
+
+### 06.2 Lifting-Body Design
+
+### 06.3 Wing Design
+
+### 06.4 Control Surfaces
+
+### 06.5 Aerodynamic Drag
+
+### 06.6 Lift Characteristics
+
+### 06.7 Propulsion-Airframe Interaction
+
+### 06.8 Stability
+
+### 06.9 Static Stability
+
+### 06.10 Dynamic Stability
+
+### 06.11 Six-Degree-of-Freedom Model
+
+### 06.12 Hover Flight
+
+### 06.13 Transition Flight
+
+### 06.14 Horizontal Flight
+
+### 06.15 Cruise
+
+### 06.16 High-Speed Flight
+
+### 06.17 Wind Effects
+
+### 06.18 Ground Effects
+
+### 06.19 Computational Fluid Dynamics
+
+### 06.20 Wind-Tunnel Testing
+
+---
+
+# VOLUME 07
+
+# FLIGHT CONTROL SYSTEM
+
+### 07.1 Flight Control Requirements
+
+### 07.2 Flight Control Architecture
+
+### 07.3 Pilot Input System
+
+### 07.4 Flight Control Laws
+
+### 07.5 Attitude Control
+
+### 07.6 Roll Control
+
+### 07.7 Pitch Control
+
+### 07.8 Yaw Control
+
+### 07.9 Altitude Control
+
+### 07.10 Velocity Control
+
+### 07.11 Hover Controller
+
+### 07.12 Transition Controller
+
+### 07.13 Cruise Controller
+
+### 07.14 Landing Controller
+
+### 07.15 Propulsion Mixing
+
+### 07.16 Thrust Allocation
+
+### 07.17 Control Authority
+
+### 07.18 Fault-Tolerant Control
+
+### 07.19 Control-System Verification
+
+---
+
+# VOLUME 08
+
+# AVIONICS & EMBEDDED COMPUTING
+
+### 08.1 Avionics Architecture
+
+### 08.2 Flight Computer
+
+### 08.3 Safety Computer
+
+### 08.4 Processing Hardware
+
+### 08.5 Real-Time Systems
+
+### 08.6 Data Buses
+
+### 08.7 Power Interfaces
+
+### 08.8 I/O Architecture
+
+### 08.9 Embedded Controllers
+
+### 08.10 Health Monitoring
+
+### 08.11 Fault Detection
+
+### 08.12 Fault Isolation
+
+### 08.13 Fault Recovery
+
+### 08.14 Redundancy
+
+### 08.15 Built-In Test
+
+### 08.16 Time Synchronisation
+
+### 08.17 Data Logging
+
+---
+
+# VOLUME 09
+
+# NAVIGATION, SENSORS & INSTRUMENTATION
+
+### 09.1 Sensor Architecture
+
+### 09.2 IMU
+
+### 09.3 Gyroscopes
+
+### 09.4 Accelerometers
+
+### 09.5 Magnetometers
+
+### 09.6 GNSS
+
+### 09.7 Barometric Altitude
+
+### 09.8 Airspeed
+
+### 09.9 Altitude Sensing
+
+### 09.10 Temperature Sensors
+
+### 09.11 Engine Sensors
+
+### 09.12 Fuel Sensors
+
+### 09.13 Sensor Fusion
+
+### 09.14 Navigation Algorithms
+
+### 09.15 Sensor Redundancy
+
+### 09.16 Sensor Fault Detection
+
+### 09.17 Instrument Calibration
+
+---
+
+# VOLUME 10
+
+# SMART HELMET & HUMAN-MACHINE INTERFACE
+
+### 10.1 Helmet Architecture
+
+### 10.2 Structural Helmet Design
+
+### 10.3 HUD
+
+### 10.4 Pilot Display
+
+### 10.5 Audio System
+
+### 10.6 Microphones
+
+### 10.7 Head Tracking
+
+### 10.8 Helmet Cameras
+
+### 10.9 Navigation Display
+
+### 10.10 Propulsion Status
+
+### 10.11 Warning System
+
+### 10.12 Pilot Alerts
+
+### 10.13 Voice Interface
+
+### 10.14 Human-Machine Interface
+
+### 10.15 Helmet Communications
+
+### 10.16 Helmet Power
+
+### 10.17 Helmet Environmental Protection
+
+---
+
+# VOLUME 11
+
+# COMMUNICATIONS & TELEMETRY
+
+### 11.1 Communications Architecture
+
+### 11.2 Pilot Communications
+
+### 11.3 Ground Communications
+
+### 11.4 Telemetry
+
+### 11.5 Command Links
+
+### 11.6 Emergency Communications
+
+### 11.7 Data Links
+
+### 11.8 Communications Redundancy
+
+### 11.9 Communications Loss Management
+
+### 11.10 Ground Station
+
+### 11.11 Mission Data
+
+### 11.12 Communications Security
+
+---
+
+# VOLUME 12
+
+# PILOT SUIT & HUMAN INTEGRATION
+
+### 12.1 Pilot Integration Architecture
+
+### 12.2 Anthropometric Requirements
+
+### 12.3 Pilot Restraint
+
+### 12.4 Load Distribution
+
+### 12.5 Ergonomics
+
+### 12.6 Pilot Controls
+
+### 12.7 Pilot Protection
+
+### 12.8 Thermal Protection
+
+### 12.9 Fire Protection
+
+### 12.10 Mobility
+
+### 12.11 Fatigue Considerations
+
+### 12.12 Physiological Monitoring
+
+### 12.13 Pilot Interface
+
+### 12.14 Human-System Integration
+
+---
+
+# VOLUME 13
+
+# SAFETY, EMERGENCY & RECOVERY SYSTEMS
+
+### 13.1 System Safety Programme
+
+### 13.2 Hazard Analysis
+
+### 13.3 Preliminary Hazard Analysis
+
+### 13.4 Functional Hazard Assessment
+
+### 13.5 Failure Modes & Effects Analysis
+
+### 13.6 Fault Tree Analysis
+
+### 13.7 Common-Cause Failure Analysis
+
+### 13.8 Emergency Procedures
+
+### 13.9 Emergency Propulsion Management
+
+### 13.10 Automatic Stabilisation
+
+### 13.11 Parachute / Recovery System
+
+### 13.12 Adaptive Impact Protection
+
+### 13.13 Inflatable Protection System
+
+### 13.14 Pilot Escape / Separation
+
+### 13.15 Fire Protection
+
+### 13.16 Emergency Power
+
+### 13.17 Emergency Communications
+
+### 13.18 Recovery System Testing
+
+---
+
+# VOLUME 14
+
+# THERMAL & ENVIRONMENTAL MANAGEMENT
+
+### 14.1 Thermal Architecture
+
+### 14.2 Engine Heat
+
+### 14.3 Exhaust Heat
+
+### 14.4 Pilot Thermal Protection
+
+### 14.5 Electronics Cooling
+
+### 14.6 Fuel Thermal Management
+
+### 14.7 Environmental Conditions
+
+### 14.8 High Temperature
+
+### 14.9 Low Temperature
+
+### 14.10 Humidity
+
+### 14.11 Rain
+
+### 14.12 Dust
+
+### 14.13 Wind
+
+### 14.14 Thermal Testing
+
+---
+
+# VOLUME 15
+
+# ELECTRICAL POWER & DISTRIBUTION
+
+### 15.1 Electrical Architecture
+
+### 15.2 Primary Power
+
+### 15.3 Auxiliary Power
+
+### 15.4 Batteries
+
+### 15.5 Power Distribution
+
+### 15.6 Power Conversion
+
+### 15.7 Circuit Protection
+
+### 15.8 Emergency Power
+
+### 15.9 Avionics Power
+
+### 15.10 Helmet Power
+
+### 15.11 Sensor Power
+
+### 15.12 Electrical Grounding
+
+### 15.13 EMI/EMC
+
+### 15.14 Electrical Testing
+
+---
+
+# VOLUME 16
+
+# SOFTWARE & FIRMWARE ENGINEERING
+
+### 16.1 Software Development Plan
+
+### 16.2 Software Architecture
+
+### 16.3 Flight Software
+
+### 16.4 Safety Software
+
+### 16.5 Embedded Firmware
+
+### 16.6 Sensor Drivers
+
+### 16.7 Flight Algorithms
+
+### 16.8 Navigation Software
+
+### 16.9 Control Software
+
+### 16.10 Propulsion Software
+
+### 16.11 Health Monitoring
+
+### 16.12 Fault Management
+
+### 16.13 Communications Software
+
+### 16.14 Helmet Software
+
+### 16.15 Ground-Control Software
+
+### 16.16 Software Testing
+
+### 16.17 Software Configuration Management
+
+### 16.18 Software Verification
+
+---
+
+# VOLUME 17
+
+# CYBERSECURITY
+
+### 17.1 Cybersecurity Architecture
+
+### 17.2 Threat Model
+
+### 17.3 Attack Surface Analysis
+
+### 17.4 Avionics Security
+
+### 17.5 Communications Security
+
+### 17.6 Ground Station Security
+
+### 17.7 Authentication
+
+### 17.8 Authorisation
+
+### 17.9 Secure Boot
+
+### 17.10 Firmware Security
+
+### 17.11 Data Protection
+
+### 17.12 Intrusion Detection
+
+### 17.13 Incident Response
+
+### 17.14 Security Verification
+
+---
+
+# VOLUME 18
+
+# AI / INTELLIGENT SYSTEMS
+
+### 18.1 AI System Requirements
+
+### 18.2 AI Architecture
+
+### 18.3 Intelligent Fault Detection
+
+### 18.4 Predictive Maintenance
+
+### 18.5 Sensor Anomaly Detection
+
+### 18.6 Pilot Assistance
+
+### 18.7 Flight-State Classification
+
+### 18.8 Computer Vision
+
+### 18.9 Intelligent Emergency Detection
+
+### 18.10 AI Safety Constraints
+
+### 18.11 Human Override
+
+### 18.12 AI Verification & Validation
+
+**Important:** safety-critical primary flight control should not depend on an opaque AI model in the initial aircraft. AI should initially operate as a monitoring/advisory layer.
+
+---
+
+# VOLUME 19
+
+# SIMULATION & DIGITAL ENGINEERING
+
+### 19.1 Digital Engineering Strategy
+
+### 19.2 System-Level Simulation
+
+### 19.3 6-DOF Simulation
+
+### 19.4 Aerodynamic Model
+
+### 19.5 Propulsion Model
+
+### 19.6 Thermal Model
+
+### 19.7 Structural Model
+
+### 19.8 Flight-Control Simulation
+
+### 19.9 Hardware-in-the-Loop
+
+### 19.10 Software-in-the-Loop
+
+### 19.11 Digital Twin
+
+### 19.12 Monte Carlo Analysis
+
+### 19.13 Failure Simulation
+
+### 19.14 Environmental Simulation
+
+### 19.15 Model Verification
+
+---
+
+# VOLUME 20
+
+# MANUFACTURING & INDUSTRIALISATION
+
+### 20.1 Manufacturing Strategy
+
+### 20.2 Production Architecture
+
+### 20.3 Manufacturing Processes
+
+### 20.4 CNC Manufacturing
+
+### 20.5 Composite Manufacturing
+
+### 20.6 Additive Manufacturing
+
+### 20.7 Machining
+
+### 20.8 Welding / Joining
+
+### 20.9 Surface Treatment
+
+### 20.10 Heat Treatment
+
+### 20.11 Supplier Requirements
+
+### 20.12 Special Processes
+
+### 20.13 Production Tooling
+
+### 20.14 Production Acceptance
+
+---
+
+# VOLUME 21
+
+# ASSEMBLY, INTEGRATION & INSTALLATION
+
+### 21.1 Assembly Strategy
+
+### 21.2 Airframe Assembly
+
+### 21.3 Propulsion Installation
+
+### 21.4 Fuel System Installation
+
+### 21.5 Electrical Installation
+
+### 21.6 Avionics Installation
+
+### 21.7 Sensor Installation
+
+### 21.8 Helmet Integration
+
+### 21.9 Recovery-System Installation
+
+### 21.10 Wiring & Harnessing
+
+### 21.11 Grounding & Bonding
+
+### 21.12 System Integration
+
+### 21.13 Integration Test Procedures
+
+---
+
+# VOLUME 22
+
+# VERIFICATION & VALIDATION
+
+### 22.1 Verification Strategy
+
+### 22.2 Validation Strategy
+
+### 22.3 Verification Cross-Reference Matrix
+
+### 22.4 Requirements Verification
+
+### 22.5 Analysis
+
+### 22.6 Inspection
+
+### 22.7 Demonstration
+
+### 22.8 Test
+
+### 22.9 Hardware Verification
+
+### 22.10 Software Verification
+
+### 22.11 System Verification
+
+### 22.12 Safety Verification
+
+### 22.13 Acceptance Testing
+
+---
+
+# VOLUME 23
+
+# GROUND & FLIGHT TEST PROGRAMME
+
+### 23.1 Test & Evaluation Strategy
+
+### 23.2 Ground Test Programme
+
+### 23.3 Propulsion Tests
+
+### 23.4 Fuel-System Tests
+
+### 23.5 Structural Tests
+
+### 23.6 Thermal Tests
+
+### 23.7 Avionics Tests
+
+### 23.8 Software Tests
+
+### 23.9 Control-System Tests
+
+### 23.10 Tethered Tests
+
+### 23.11 Unmanned Flight Tests
+
+### 23.12 Transition Tests
+
+### 23.13 Human Flight Test Programme
+
+### 23.14 Envelope Expansion
+
+### 23.15 Emergency Tests
+
+### 23.16 Flight-Test Instrumentation
+
+### 23.17 Flight-Test Data Analysis
+
+### 23.18 Flight-Test Reports
+
+---
+
+# VOLUME 24
+
+# RELIABILITY, MAINTAINABILITY & SAFETY
+
+### 24.1 Reliability Engineering
+
+### 24.2 Reliability Allocation
+
+### 24.3 Failure Rate Analysis
+
+### 24.4 FMEA
+
+### 24.5 Fault Tree Analysis
+
+### 24.6 Availability
+
+### 24.7 Maintainability
+
+### 24.8 Mean Time Between Failures
+
+### 24.9 Mean Time To Repair
+
+### 24.10 Life-Limited Components
+
+### 24.11 Condition Monitoring
+
+### 24.12 Predictive Maintenance
+
+### 24.13 Safety-Critical Components
+
+---
+
+# VOLUME 25
+
+# AIRWORTHINESS & CERTIFICATION
+
+### 25.1 Certification Strategy
+
+### 25.2 Regulatory Basis
+
+### 25.3 Applicable Aviation Regulations
+
+### 25.4 Airworthiness Requirements
+
+### 25.5 Experimental Aircraft Requirements
+
+### 25.6 Flight-Test Authorisation
+
+### 25.7 Type-Certification Strategy
+
+### 25.8 Production Certification
+
+### 25.9 Continuing Airworthiness
+
+### 25.10 Certification Compliance Matrix
+
+### 25.11 Authority Engagement
+
+### 25.12 Certification Evidence
+
+### 25.13 Conformity Inspection
+
+---
+
+# VOLUME 26
+
+# OPERATIONS & PILOT PROCEDURES
+
+### 26.1 Concept of Operations
+
+### 26.2 Operating Limitations
+
+### 26.3 Pilot Qualification
+
+### 26.4 Pre-Flight Procedures
+
+### 26.5 Start Procedures
+
+### 26.6 Hover Procedures
+
+### 26.7 Transition Procedures
+
+### 26.8 Cruise Procedures
+
+### 26.9 Landing Procedures
+
+### 26.10 Emergency Procedures
+
+### 26.11 Weather Limitations
+
+### 26.12 Fuel Management
+
+### 26.13 Communications Procedures
+
+### 26.14 Post-Flight Procedures
+
+### 26.15 Incident Reporting
+
+---
+
+# VOLUME 27
+
+# MAINTENANCE & LOGISTICS
+
+### 27.1 Maintenance Programme
+
+### 27.2 Scheduled Maintenance
+
+### 27.3 Unscheduled Maintenance
+
+### 27.4 Inspection Programme
+
+### 27.5 Engine Maintenance
+
+### 27.6 Fuel-System Maintenance
+
+### 27.7 Avionics Maintenance
+
+### 27.8 Electrical Maintenance
+
+### 27.9 Structural Inspection
+
+### 27.10 Recovery-System Maintenance
+
+### 27.11 Component Life Management
+
+### 27.12 Spare Parts
+
+### 27.13 Ground Support Equipment
+
+### 27.14 Maintenance Records
+
+---
+
+# VOLUME 28
+
+# PRODUCTION QUALITY & CONFIGURATION CONTROL
+
+### 28.1 Quality Management System
+
+### 28.2 Inspection Plans
+
+### 28.3 Incoming Inspection
+
+### 28.4 In-Process Inspection
+
+### 28.5 Final Inspection
+
+### 28.6 Non-Conformance Management
+
+### 28.7 Corrective Actions
+
+### 28.8 Supplier Quality
+
+### 28.9 Configuration Control
+
+### 28.10 Serialisation
+
+### 28.11 Traceability
+
+### 28.12 Production Acceptance
+
+---
+
+# VOLUME 29
+
+# TECHNICAL DATA & ILLUSTRATED PARTS CATALOGUE
+
+### 29.1 Master Parts List
+
+### 29.2 Bill of Materials
+
+### 29.3 Engineering Drawings
+
+### 29.4 CAD Data
+
+### 29.5 Wiring Diagrams
+
+### 29.6 Piping Diagrams
+
+### 29.7 Hydraulic/Pneumatic Schematics
+
+### 29.8 Electrical Schematics
+
+### 29.9 Interface Drawings
+
+### 29.10 Assembly Drawings
+
+### 29.11 Exploded Views
+
+### 29.12 Illustrated Parts Catalogue
+
+### 29.13 Component Identification
+
+### 29.14 Revision Control
+
+---
+
+# VOLUME 30
+
+# TRAINING & HUMAN FACTORS
+
+### 30.1 Pilot Training Programme
+
+### 30.2 Ground Crew Training
+
+### 30.3 Maintenance Training
+
+### 30.4 Simulator Training
+
+### 30.5 Emergency Training
+
+### 30.6 Human Factors
+
+### 30.7 Workload Analysis
+
+### 30.8 Human Error Analysis
+
+### 30.9 Situational Awareness
+
+### 30.10 Crew Resource Management
+
+### 30.11 Competency Assessment
+
+---
+
+# VOLUME 31
+
+# PRODUCT VARIANTS & MISSION SYSTEMS
+
+This is where the future BOLTE product family lives.
+
+### 31.1 HFP-X Personal
+
+### 31.2 HFP-X Professional
+
+### 31.3 HFP-X Defence
+
+### 31.4 HFP-X Rescue
+
+### 31.5 HFP-X Emergency Response
+
+### 31.6 Mission Equipment
+
+### 31.7 Payload Interfaces
+
+### 31.8 Modular Equipment Architecture
+
+### 31.9 Variant Configuration
+
+### 31.10 Common Core Architecture
+
+---
+
+# VOLUME 32
+
+# LIFECYCLE MANAGEMENT & SUSTAINMENT
+
+### 32.1 Product Lifecycle
+
+### 32.2 Configuration Baselines
+
+### 32.3 Fleet Management
+
+### 32.4 Operational Data
+
+### 32.5 Reliability Growth
+
+### 32.6 Continuous Improvement
+
+### 32.7 Software Updates
+
+### 32.8 Hardware Upgrades
+
+### 32.9 Obsolescence Management
+
+### 32.10 End-of-Life Management
+
+### 32.11 Product Retirement
+
+---
+
+# VOLUME 33
+
+# MVP / PROTOTYPE DEVELOPMENT PROGRAMME
+
+This volume should be **separate from the production aircraft documentation**.
+
+### 33.1 MVP Objectives
+
+### 33.2 MVP System Requirements
+
+### 33.3 MVP Architecture
+
+### 33.4 Prototype Configuration
+
+### 33.5 Experimental Components
+
+### 33.6 Prototype Propulsion
+
+### 33.7 Prototype Avionics
+
+### 33.8 Prototype Flight Computer
+
+### 33.9 Prototype Sensors
+
+### 33.10 Prototype Ground Station
+
+### 33.11 Prototype Safety System
+
+### 33.12 Test Instrumentation
+
+### 33.13 Ground-Test Programme
+
+### 33.14 Unmanned-Test Programme
+
+### 33.15 Transition Demonstration
+
+### 33.16 Experimental Data
+
+### 33.17 Lessons Learned
+
+### 33.18 Design Iteration
+
+### 33.19 MVP Exit Criteria
+
+### 33.20 Production-Design Transition
+
+---
+
+# The lifecycle itself
+
+The volumes above should operate across a formal **Systems Engineering V-model** rather than being written independently.
+
+```text
+                    MISSION
+                       │
+                       ▼
+              STAKEHOLDER NEEDS
+                       │
+                       ▼
+                SYSTEM REQUIREMENTS
+                       │
+                       ▼
+                SYSTEM ARCHITECTURE
+                       │
+                       ▼
+              SUBSYSTEM REQUIREMENTS
+                       │
+                       ▼
+                DETAILED DESIGN
+                       │
+                       ▼
+              IMPLEMENTATION
+                       │
+                       ▼
+             INTEGRATION & TEST
+                       │
+                       ▼
+                 VERIFICATION
+                       │
+                       ▼
+                  VALIDATION
+                       │
+                       ▼
+                CERTIFICATION
+                       │
+                       ▼
+                   PRODUCTION
+                       │
+                       ▼
+                  OPERATIONS
+                       │
+                       ▼
+                 MAINTENANCE
+                       │
+                       ▼
+                  RETIREMENT
+```
+
+And the critical traceability should run backwards:
+
+```text
+MISSION OBJECTIVE
+      ↓
+STAKEHOLDER REQUIREMENT
+      ↓
+SYSTEM REQUIREMENT
+      ↓
+SUBSYSTEM REQUIREMENT
+      ↓
+DESIGN ELEMENT
+      ↓
+IMPLEMENTATION
+      ↓
+TEST CASE
+      ↓
+TEST RESULT
+      ↓
+VERIFICATION EVIDENCE
+      ↓
+CERTIFICATION EVIDENCE
+```
+
+## The five master documents
+
+Although there may ultimately be hundreds of individual documents, I'd make these **five the backbone of the BOLTE programme**:
+
+1. **HFP-X Systems Engineering Management Plan — SEMP**
+2. **HFP-X System Requirements Specification — SyRS**
+3. **HFP-X System Architecture Description — SAD**
+4. **HFP-X Verification & Validation Plan — V&V**
+5. **HFP-X Safety & Airworthiness Case**
+
+Everything else should trace back to these.
+
+### And the document-control structure should look like:
+
+```text
+HFP-X/
+│
+├── 00_PROGRAMME_MANAGEMENT/
+├── 01_REQUIREMENTS/
+├── 02_ARCHITECTURE/
+├── 03_AIRFRAME/
+├── 04_PROPULSION/
+├── 05_FUEL/
+├── 06_AERODYNAMICS/
+├── 07_FLIGHT_CONTROL/
+├── 08_AVIONICS/
+├── 09_SENSORS/
+├── 10_HELMET_HMI/
+├── 11_COMMUNICATIONS/
+├── 12_HUMAN_INTEGRATION/
+├── 13_SAFETY_RECOVERY/
+├── 14_THERMAL/
+├── 15_ELECTRICAL/
+├── 16_SOFTWARE/
+├── 17_CYBERSECURITY/
+├── 18_AI/
+├── 19_SIMULATION/
+├── 20_MANUFACTURING/
+├── 21_INTEGRATION/
+├── 22_VERIFICATION/
+├── 23_FLIGHT_TEST/
+├── 24_RELIABILITY/
+├── 25_CERTIFICATION/
+├── 26_OPERATIONS/
+├── 27_MAINTENANCE/
+├── 28_QUALITY/
+├── 29_TECHNICAL_DATA/
+├── 30_TRAINING/
+├── 31_VARIANTS/
+├── 32_SUSTAINMENT/
+└── 33_MVP/
+```
+
+**This is the structure I would use as the master Table of Contents for the BOLTE HFP-X programme.** It gives us a proper separation between **requirements, design, implementation, safety, verification, certification, production and operations**, rather than mixing them together.

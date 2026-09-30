@@ -1,0 +1,7 @@
+Budget line,Low,High,Unit,Basis,Status
+Hover thrust required (= liftoff weight),1079.0,1471.0,N,Derived: T = W,TBC
+"Thrust available (5x TJ40-class, REF-CLASS)",1975.0,1975.0,N,PUBLISHED (PBS TJ40),TBC
+Hover T/W (REF-CLASS check),1.34,1.83,-,Derived,TBC
+"Per-module mean thrust (hover, even split TBD)",216.0,294.0,N,Derived (allocation TBD per 07.16),TBC
+T/W margin policy,,,-,TBD (07.17 authority budgets),TBD
+Transition thrust requirement,,,N,"TBD (needs 6-DOF corridor, ISS-006)",TBD
