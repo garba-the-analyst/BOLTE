@@ -27,8 +27,8 @@ Originals: `[TBD custodian — default both co-founders, sealed envelope + scann
 |---|---|---|---|---|---|---|---|
 | Abdullahi Garba (P1) | ✓ 01/10 | ☐ | ☐ | ☐ | ☐ | ☐ | none declared |
 | Essien Frances (P2) | ✓ 30/09 | ☐ | ☐ | ☐ | ☐ | ☐ | none declared |
-| E.T.D. (P3, B1 prov.) | ✓ 01/10 (gaps: address, city, emergency name, explicit Q21/Q22) | ☐ | ☐ | ☐ | ☐ | ☐ | unstated — chase |
-| Y.A.O. (P4, B2) | ✓ 01/10 | ☐ | ☐ | ☐ | ☐ | ☐ | none declared |
+| Essien Timiobong Dunnhill (P3, B1 prov.) | ✓ 01/10 (gaps: address, city, emergency name, explicit Q21/Q22) | ☐ | ☐ | ☐ | ☐ | ☐ | unstated — chase |
+| Yusuf Azeemah Oyiza (P4, B2) | ✓ 01/10 | ☐ | ☐ | ☐ | ☐ | ☐ | none declared |
 | Abdulazeez Masud (P5A, D — Assistant to Lead Engineer) | ✓ 01/10 | ☐ | ☐ | ☐ | ☐ | ☐ | none declared |
 | David Uzondu (P5B, C — Lead Engineer) | ✓ 01/10 | ☐ | ☐ | ☐ | ☐ | ☐ | none declared |
 | E — VACANT (Business & Financial Adviser, founders to decide) | — | — | — | — | — | — | — |

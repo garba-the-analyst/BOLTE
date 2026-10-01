@@ -3,6 +3,7 @@
 All notable documentation changes tracked here. Format: `YYYY-MM-DD — change`.
 
 ## [Unreleased]
+- Team page with photos: extracted 4 portraits from submitted PDFs (Frances, Timi, David, Abdulazeez) + Garba's file → `website/assets/team/` @800px; full names for all six per CEO decision (overrides P3/P4 Q9 initials-only — re-consent at signing). Missing: Zheemah's portrait (her PDF not on disk — send the Q23 file).
 - Team seats + titles resolved (founders 01 Oct 2026): Garba CEO/CTO, Frances Research & Operations Lead, David = C Lead Engineer, Abdulazeez = D Assistant, Azeemah = B2 Product Designer & Manager, Timi = B1 Treasurer & Research Assistant (provisional), E vacant for Business & Financial Adviser. Equity numbers untouched (redefinition deferred).
 - Team page rebuilt: 7 cards (Garba photo live from `website/assets/team/p1-garba.jpg`; mark avatars for the rest; initials-only members get no photo per Q9 consent; vacant E dashed). Drop-in convention: `website/assets/team/<slot>-<name>.jpg` @800px. Still missing: portraits for Frances, David, Abdulazeez, Timi, Azeemah.
 - Membership intake 30 Sept–01 Oct 2026: 5 questionnaires processed (P1 Garba, P2 Frances, P3 Timi, P4 Zheemah, P5A Abdulazeez, P5B David). Full PII in gitignored `docs/05-people/private/roster.md` ONLY — nothing personal committed.

@@ -8,7 +8,7 @@ Team Lead is official contact: Abdullahi Garba via bolte.tech0@gmail.com (F1/F11
 |---|---|---|---|---|---|---|---|
 | 1 (Lead) | Abdullahi Garba (P1) | 25 | Newgate University Minna | Yes | Partial | Tech + official contact | ☐ verified |
 | 2 | Essien Frances (P2) | 21 | University of Abuja | Yes | All stages | Research/comms | ☐ verified |
-| 3 | Y.A.O. (P4) | 23 | FUT Minna | Yes | All stages | Prod/ops + delivery | ☐ verified |
+| 3 | Yusuf Azeemah Oyiza (P4) | 23 | FUT Minna | Yes | All stages | Prod/ops + delivery | ☐ verified |
 | 4 | Abdulazeez Masud (P5A) | 19 | University of Abuja | Yes | Partial (parents + transport) | Builder | ☐ verified |
 | 5 | David Uzondu (P5B) | 20 | University of Abuja | Yes | All stages | Builder | ☐ verified |
 
@@ -16,7 +16,7 @@ Reserve / non-presenting BOLTE members (cannot present unless registered):
 
 | Name | Reason not presenting | NDA signed |
 |---|---|---|
-| E.T.D. (P3) | Not enrolled (support/back-office; provisional Treasurer) | ☐ |
+| Essien Timiobong Dunnhill (P3) | Not enrolled (support/back-office; provisional Treasurer) | ☐ |
 | Seat E | Vacant | — |
 
 Checks before submit:

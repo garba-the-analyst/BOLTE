@@ -2,8 +2,8 @@ beneficiary,role,pct_of_net,variable_name,holder
 Treasury,Retained (incl. vacant Seat E share),70.0,TREASURY_PCT,—
 Abdullahi Garba,Co-founder P1,6.0,FOUNDER1_PCT,Abdullahi Garba
 Essien Frances,Co-founder P2,6.0,FOUNDER2_PCT,Essien Frances
-E.T.D.,Member B1 Treasurer (provisional P3),4.5,TREASURER_PCT,P3 provisional
-Y.A.O.,Member B2 Product-Ops (P4),4.5,PRODOPS_PCT,P4
+Essien Timiobong Dunnhill,Member B1 Treasurer (provisional P3),4.5,TREASURER_PCT,P3 provisional
+Yusuf Azeemah Oyiza,Member B2 Product Designer and Manager (P4),4.5,PRODOPS_PCT,P4
 Member C,Lead Engineer (David Uzondu P5B),4.5,MEMBER_C_PCT,P5B
 Member D,Assistant to Lead Engineer (Abdulazeez Masud P5A),4.5,MEMBER_D_PCT,P5A
 Member E,VACANT (held in Treasury),0.0,MEMBER_E_PCT,VACANT
