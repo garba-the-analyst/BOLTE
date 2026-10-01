@@ -8,7 +8,7 @@ Who is who:
 | Code | Person | Role |
 |---|---|---|
 | P1 | Abdullahi Garba | Co-founder / Technical Lead |
-| P2 | Essien Frances | Co-founder / Operations Lead |
+| P2 | Essien Frances | Co-founder / COO & Research Lead |
 | P3 | [TBD] | Member B1 — Treasurer |
 | P4 | [TBD] | Member B2 — Product/Operations Manager |
 | P5 | [TBD] | Member C |

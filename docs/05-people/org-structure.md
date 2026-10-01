@@ -6,7 +6,7 @@ Titles per founders' decision 01 Oct 2026. Titles per founders' decision 01 Oct 
 | Seat | Holder | Title + mandate |
 |---|---|---|
 | Co-founder | Abdullahi Garba (P1) | **CEO/CTO** — engineering direction, R&D programs, product architecture; Team Lead + official contact |
-| Co-founder | Essien Frances (P2) | **Research & Operations Lead** — operations, partnerships, ecosystem, compliance |
+| Co-founder | Essien Frances (P2) | **COO & Research Lead** — operations, partnerships, ecosystem, compliance |
 | Member B1 | Essien Timiobong Dunnhill (P3, provisional — 3 hrs/wk under review) | **Treasurer & Research Assistant** — funds ledger, treasury custody, reporting, cap-table upkeep |
 | Member B2 | Yusuf Azeemah Oyiza (P4) | **Product Designer & Manager** — roadmap execution, competition delivery, QA, design |
 | Member C | David Uzondu (P5B) | **Lead Engineer** — hardware/embedded + RF/avionics systems |
