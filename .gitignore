@@ -12,15 +12,14 @@
 *.pyc
 *.local
 
-# AeroPulse-NG local-only data (raw RF archives, live captures, runtime DBs)
-projects/aeropulse-ng/datasources/
-projects/aeropulse-ng/data/real/
-projects/aeropulse-ng/**/*.csv.gz
-projects/aeropulse-ng/**/*.csv
-projects/aeropulse-ng/**/*.zip
-projects/aeropulse-ng/**/*.duckdb
-projects/aeropulse-ng/**/*.duckdb.wal
-projects/aeropulse-ng/**/*.log
+# Member PII — NEVER commit. Full questionnaire answers (emails, phones,
+# addresses, DOBs, matric IDs, portraits) live in docs/05-people/private/
+# on founders' machines only. Public docs carry consent-level names only.
+docs/05-people/private/
+members-*.json
+members-*.csv
+bolte-questionnaire-*.json
+bolte-questionnaire-*.csv
 
 # Local Pages preview bundle (see build-scripts/package-pages.sh)
 _pages/

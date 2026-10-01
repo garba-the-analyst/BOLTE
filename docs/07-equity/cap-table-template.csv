@@ -1,9 +1,9 @@
-beneficiary,role,pct_of_net,variable_name,holder_tbd
-Treasury,Retained,50.0,TREASURY_PCT,—
-Abdullahi Garba,Co-founder,10.0,FOUNDER1_PCT,Abdullahi Garba
-Essien Frances,Co-founder,10.0,FOUNDER2_PCT,Essien Frances
-Treasurer,Member B1 premium,7.5,TREASURER_PCT,[TBD]
-Product-Ops Manager,Member B2 premium,7.5,PRODOPS_PCT,[TBD]
-Member C,Member,5.0,MEMBER_C_PCT,[TBD]
-Member D,Member,5.0,MEMBER_D_PCT,[TBD]
-Member E,Member,5.0,MEMBER_E_PCT,[TBD]
+beneficiary,role,pct_of_net,variable_name,holder
+Treasury,Retained (incl. vacant Seat E share),70.0,TREASURY_PCT,—
+Abdullahi Garba,Co-founder P1,6.0,FOUNDER1_PCT,Abdullahi Garba
+Essien Frances,Co-founder P2,6.0,FOUNDER2_PCT,Essien Frances
+E.T.D.,Member B1 Treasurer (provisional P3),4.5,TREASURER_PCT,P3 provisional
+Y.A.O.,Member B2 Product-Ops (P4),4.5,PRODOPS_PCT,P4
+Member C,Member (P5A or P5B — assign),4.5,MEMBER_C_PCT,TBD assign
+Member D,Member (the other P5 filer — assign),4.5,MEMBER_D_PCT,TBD assign
+Member E,VACANT (held in Treasury),0.0,MEMBER_E_PCT,VACANT

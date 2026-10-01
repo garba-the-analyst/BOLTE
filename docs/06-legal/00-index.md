@@ -5,7 +5,7 @@
 ## Documents
 | Doc | File | Version | Status |
 |---|---|---|---|
-| MOU pre-incorporation (7 parties) | `MOU-template.md` | v0.2 | Template · unsigned · [TBD effective date] |
+| MOU pre-incorporation (7 parties) | `MOU-template.md` | v0.2 | Template · unsigned · effective 02 Oct 2026 (F2, both founders agree) |
 | NDA mutual | `NDA-template.md` | v0.2 | Template · unsigned · 3 yrs (trade secrets 5) |
 | IP assignment + CoI | `IP-assignment-conflict-of-interest.md` | v0.2 | Template · unsigned · Schedule A per member |
 | Code of Conduct | `../05-people/code-of-conduct.md` | — | warning → suspension → removal |
@@ -22,13 +22,13 @@
 ## Storage
 Originals: `[TBD custodian — default both co-founders, sealed envelope + scanned PDF]`. Access: need-to-know. Retention: duration + 6 years after exit. Never publish full texts on the website — summaries only (`website/legal.html`).
 
-## Status table (fill as signed)
-| Person | Stage 1 | Stage 2 | NDA | IP+CoI | MOU | Prior IP |
-|---|---|---|---|---|---|---|
-| Abdullahi Garba | ☐ | ☐ | ☐ | ☐ | ☐ | [TBD] |
-| Essien Frances | ☐ | ☐ | ☐ | ☐ | ☐ | [TBD] |
-| B1 Treasurer [TBD] | ☐ | ☐ | ☐ | ☐ | ☐ | [TBD] |
-| B2 Prod/Ops [TBD] | ☐ | ☐ | ☐ | ☐ | ☐ | [TBD] |
-| C [TBD] | ☐ | ☐ | ☐ | ☐ | ☐ | [TBD] |
-| D [TBD] | ☐ | ☐ | ☐ | ☐ | ☐ | [TBD] |
-| E [TBD] | ☐ | ☐ | ☐ | ☐ | ☐ | [TBD] |
+## Status table (questionnaire received 30 Sept–01 Oct 2026; nothing signed yet)
+| Person | Questionnaire | Stage 1 | Stage 2 | NDA | IP+CoI | MOU | Prior IP |
+|---|---|---|---|---|---|---|---|
+| Abdullahi Garba (P1) | ✓ 01/10 | ☐ | ☐ | ☐ | ☐ | ☐ | none declared |
+| Essien Frances (P2) | ✓ 30/09 | ☐ | ☐ | ☐ | ☐ | ☐ | none declared |
+| E.T.D. (P3, B1 prov.) | ✓ 01/10 (gaps: address, city, emergency name, explicit Q21/Q22) | ☐ | ☐ | ☐ | ☐ | ☐ | unstated — chase |
+| Y.A.O. (P4, B2) | ✓ 01/10 | ☐ | ☐ | ☐ | ☐ | ☐ | none declared |
+| Abdulazeez Masud (P5A, C/D?) | ✓ 01/10 | ☐ | ☐ | ☐ | ☐ | ☐ | none declared |
+| David Uzondu (P5B, C/D?) | ✓ 01/10 | ☐ | ☐ | ☐ | ☐ | ☐ | none declared |
+| E — VACANT | — | — | — | — | — | — | — |

@@ -6,7 +6,7 @@
 
 **Recitals:** The parties wish to collaborate as BOLTE per the Canon (`docs/01-canon/`) to research/engineer/deploy indigenous technologies (flagship AeroPulse-NG; concepts ASOL/DAFV/C4ISR-DFE/TBR-HS spec-only), compete at NDAIE 2026, and convert to a Ltd on CAC incorporation.
 
-**Definitions:** *Work Product* = code, designs, docs, inventions, data, demos, decks created within BOLTE scope. *Prior IP* = Schedule A items owned before signing. *Net gains (N)* = gross prizes/grants/revenue minus receipted direct costs. *Effective date* `[TBD — A3]`.
+**Definitions:** *Work Product* = code, designs, docs, inventions, data, demos, decks created within BOLTE scope. *Prior IP* = Schedule A items owned before signing. *Net gains (N)* = gross prizes/grants/revenue minus receipted direct costs. *Effective date* **02 Oct 2026** (F2, both founders agree).
 
 **1. Purpose & scope.** Collaborate per Canon + `05-people/` mandates. No employment or partnership created; no authority to bind others except as stated.
 
@@ -18,7 +18,7 @@
 
 **5. IP.** All Work Product owned by the Collective, held in trust by the founders pre-incorporation; inventors attributed. Prior IP excluded via Schedule A. No filing, licence, assignment, or public disclosure without both founders' written approval. Members disclose inventions promptly and assist filings. Survives exit.
 
-**6. Money.** 50% of N to Treasury first; remainder per `07-equity/equity-model.md` default (10/10 + 7.5/7.5/5/5/5) via `cap-table-template.csv`. Treasurer publishes monthly ledger; audit right. Spending > `[₦ TBD — F4]` needs both founders. Treasury disbursements dual-signed (Treasurer + one founder). Joiners/leavers pro-rata by weeks active; forfeited/unclaimed → Treasury. Prize rule: same split unless sub-team + both founders agree otherwise in writing before submission.
+**6. Money.** 70% of N to Treasury first; remainder per `07-equity/equity-model.md` (6/6 founders + 4.5 × 4 seated members B1/B2/C/D; Seat E vacant, share held in Treasury) via `cap-table-template.csv`. Treasurer publishes monthly ledger; audit right. Spending > `[₦ TBD — F8 UNDECIDED: P1 "due time" vs P2 "agreed"]` needs both founders. Treasury disbursements dual-signed (Treasurer + one founder). Joiners/leavers pro-rata by weeks active; forfeited/unclaimed → Treasury. Prize rule: same split unless sub-team + both founders agree otherwise in writing before submission.
 
 **7. Decisions.** Day-to-day by role owners. Canon changes, IP, partnerships, spending above threshold, publications, competition entries, public representation: both founders. Deadlock → mediation in `[Lagos — A4]`, then arbitration under the Arbitration and Mediation Act 2023 (Lagos seat).
 
@@ -30,4 +30,4 @@
 
 **Signatures.** 7 blocks: printed name / address / ID / phone / signature / date + witness (name/signature/date) each. Attach Schedules: A Members register · B Prior IP (7 rows) · C Cap-table reference · D Notice addresses · E Onboarding checklist refs (Stage 1/2 form IDs + dates).
 
-*Version footer: MOU-template v0.2 · Effective [TBD] · Lawyer review [TBD — G6].*
+*Version footer: MOU-template v0.2 · Effective 02 Oct 2026 · Lawyer review [TBD — F9 skipped, counsel still needed].*

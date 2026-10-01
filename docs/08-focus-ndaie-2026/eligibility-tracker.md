@@ -2,22 +2,22 @@
 
 Must be 2–5 students. Every member: 16–30 yrs at application + currently enrolled at a Nigerian secondary school / college / polytechnic / university. Organisers, judges, NASS Research & Innovation Committee members may not compete. Faculty/mentors advise only.
 
-Team Lead is official contact and submits full roster (name, email, DOB).
+Team Lead is official contact: Abdullahi Garba via bolte.tech0@gmail.com (F1/F11, both founders agree). Full roster with emails/DOBs/matric IDs held privately (`docs/05-people/private/roster.md`, gitignored) for the NASS submission — this tracker carries consent-safe display data only.
 
-| # | Full name | Email | DOB (YYYY-MM-DD) | Age at 26 Sept 2026 | School + matric/ID | Role in pitch | Status |
+| # | Display name (Q9 consent) | Age | School | Enrolled | Availability | Role in pitch | Status |
 |---|---|---|---|---|---|---|---|
-| 1 (Lead) | [TBD] | [TBD] | [TBD] | [TBD] | [TBD] | [TBD] | ☐ verified |
-| 2 | [TBD] | [TBD] | [TBD] | [TBD] | [TBD] | [TBD] | ☐ verified |
-| 3 | [TBD] | [TBD] | [TBD] | [TBD] | [TBD] | [TBD] | ☐ verified |
-| 4 (optional) | [TBD] | [TBD] | [TBD] | [TBD] | [TBD] | [TBD] | ☐ verified |
-| 5 (optional) | [TBD] | [TBD] | [TBD] | [TBD] | [TBD] | [TBD] | ☐ verified |
+| 1 (Lead) | Abdullahi Garba (P1) | 25 | Newgate University Minna | Yes | Partial | Tech + official contact | ☐ verified |
+| 2 | Essien Frances (P2) | 21 | University of Abuja | Yes | All stages | Research/comms | ☐ verified |
+| 3 | Y.A.O. (P4) | 23 | FUT Minna | Yes | All stages | Prod/ops + delivery | ☐ verified |
+| 4 | Abdulazeez Masud (P5A) | 19 | University of Abuja | Yes | Partial (parents + transport) | Builder | ☐ verified |
+| 5 | David Uzondu (P5B) | 20 | University of Abuja | Yes | All stages | Builder | ☐ verified |
 
 Reserve / non-presenting BOLTE members (cannot present unless registered):
 
 | Name | Reason not presenting | NDA signed |
 |---|---|---|
-| [TBD] | [e.g. 6th/7th member over team cap] | ☐ |
-| [TBD] | | ☐ |
+| E.T.D. (P3) | Not enrolled (support/back-office; provisional Treasurer) | ☐ |
+| Seat E | Vacant | — |
 
 Checks before submit:
 - [ ] Count is 2–5 inclusive

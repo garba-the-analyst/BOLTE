@@ -67,7 +67,7 @@ How to use: reply in chat, or copy this file, fill answers after each question, 
 
 ## H. 07-Equity (equity-model, cap-table)
 
-Locked default: 50% Treasury / 10% + 10% Founders / 7.5% + 7.5% + 5% + 5% + 5%.
+Superseded 30 Sept 2026 by founders' F10 answers: 70% Treasury / 6+6 Founders / 4.5×4 seated (E vacant held in Treasury). Was: 50% Treasury / 10% + 10% Founders / 7.5% + 7.5% + 5% + 5% + 5%.
 
 - H1. Confirm founders equal 10/10 (or state exact split of the 20% founders pool)?
 - H2. Confirm Treasurer 7.5 / Prod-Ops 7.5 / others 5 each (or give exact numbers)?

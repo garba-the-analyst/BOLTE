@@ -34,7 +34,7 @@ BOLTE/
 - Logo: **Still being designed.** Use text wordmark `BOLTE` per `docs/02-brand-ip/brand-guide.md`.
 - Domain/email/contact: **TBD.** Placeholders used throughout.
 - Competition: **NDAIE 2026 National Innovation Pitch Challenge**, category **Flight Planning & Air Traffic Management**, deadline **26 Sept 2026, 23:59 WAT**. Start at `docs/08-focus-ndaie-2026/competition-playbook.md`.
-- Profit model default: **50% Treasury / 10% + 10% Founders / 7.5% + 7.5% + 5% + 5% + 5% Members.** See `docs/07-equity/equity-model.md`.
+- Profit model (founders' decision 30 Sept 2026): **70% Treasury / 6% + 6% Founders / 4.5% × 4 seated members (Seat E vacant, held in Treasury).** See `docs/07-equity/equity-model.md`.
 
 ## Conventions
 

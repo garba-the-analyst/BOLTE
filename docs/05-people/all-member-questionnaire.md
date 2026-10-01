@@ -55,7 +55,7 @@ After this questionnaire, each person still completes the formal forms: Stage 1 
 
 ### F. Portrait + legal acknowledgements (lands in: team page if Q9 consented; Stage 2 ack boxes; `00-index.md`)
 - Q23. Professional portrait attached? (JPG/PNG headshot you approve for BOLTE use — attach file or `[TBD]`)
-- Q24. Confirm all five (type YES/NO each): (a) uphold Canon + ethics guardrails · (b) Code of Conduct (original work, safety) · (c) NDA confidentiality 3 yrs / trade secrets 5 yrs · (d) assign BOLTE-scope IP to the collective, prior IP excluded · (e) understand profit model (50% Treasury / 10+10 / 7.5+7.5 / 5+5+5, pro-rata, monthly ledger)
+- Q24. Confirm all five (type YES/NO each): (a) uphold Canon + ethics guardrails · (b) Code of Conduct (original work, safety) · (c) NDA confidentiality 3 yrs / trade secrets 5 yrs · (d) assign BOLTE-scope IP to the collective, prior IP excluded · (e) understand profit model (70% Treasury / 6+6 / 4.5×4 seated, E vacant held in Treasury, pro-rata, monthly ledger)
 
 ---
 
@@ -70,7 +70,7 @@ After this questionnaire, each person still completes the formal forms: Stage 1 
 - F7. Products: approve public AeroPulse wording + costs (~$150 SDR)? Demo secrets in/out? Second-product priority? Keep v2.4.0 TRL 4–5 label? (→ E1–E5)
 - F8. People: weekly commitment rule? Spending threshold needing both founders (e.g. ₦50,000)? Inactivity 4/8-week rule? CoC penalties? (→ F3–F6)
 - F9. Legal: MOU term/duration? NDA 3/5-yr term? Witnesses per signature (1 or 2)? Counsel for sign-off, or referral needed? (→ G1/G3/G5/G6)
-- F10. Equity: confirm 10/10 + 7.5/7.5 + 5/5/5? Distribution trigger + minimum payout? Pro-rata by weeks? Prize-money same split? Treasury dual-sign? (→ H1–H6)
+- F10. Equity: confirm 6+6 / 4.5×4 + E vacant (or 5×3.6)? Distribution trigger + minimum payout? Pro-rata by weeks? Prize-money same split? Treasury dual-sign? (→ H1–H6)
 - F11. NDAIE: Team Lead designation? School affiliation(s)? Summary/deck/video owners? Conflicts + AI-use wording? "Ask" slide needs? (→ I2–I8; I1 comes from Part 1 Q5/Q11–Q15)
 - F12. Strategy + website: first customer targets? Cost figures to publish? Revenue priority? Funding ask? Competitors to acknowledge? Stack/contact/team-page/analytics decisions? (→ J1–J5, K1–K5)
 

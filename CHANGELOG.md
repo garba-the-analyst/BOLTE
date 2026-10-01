@@ -3,6 +3,9 @@
 All notable documentation changes tracked here. Format: `YYYY-MM-DD — change`.
 
 ## [Unreleased]
+- Membership intake 30 Sept–01 Oct 2026: 5 questionnaires processed (P1 Garba, P2 Frances, P3 Timi, P4 Zheemah, P5A Abdulazeez, P5B David). Full PII in gitignored `docs/05-people/private/roster.md` ONLY — nothing personal committed.
+- Founders' decisions applied: contact bolte.tech0@gmail.com live on site; effective date 02 Oct 2026; Lagos/₦/Nigerian-English kept; Team Lead Garba; NEW split 70/6+6/4.5×4 (E vacant) in equity model + cap-table + MOU + site. OPEN: P5A/P5B→C/D assignment, 5th-seat math (0 vs 5×3.6), F8 spending/commitment rules (founders split), P3 gaps + 3hrs Treasurer concern.
+- Website team page: 2 named members added (consent: full name), B1/B2 as initials, seats table updated.
 - Project repos split: all 6 projects moved out of `BOLTE/projects/` into own public repos (`aeropulse-ng` re-attached w/ history + WIP push; new `asol`, `dafv`, `c4isr-dfe`, `tbr-hs`, `bolte-hfp`); BOLTE keeps briefs + `projects/README.md` link index; all doc/website paths rewired to repo URLs; HFP figure vendored into `website/assets/hfp/`.
 - Hosted member form: new `forms/all-member-questionnaire.html` (P1–P7 slot picker, Q1–Q24 + founders F1–F12 collapsible section, portrait, age check, autosave, JSON/CSV/print export, JS syntax-checked); linked from website contact page; ships in Pages bundle via existing `forms/**` workflow path + `../forms/` link rewrite.
 - HFP-X moved into `projects/` + drawings landed: `BOLTE HFP/` relocated from repo root to `projects/BOLTE HFP/`; new `HFP-X blueprints/` (9 DWG sheets DWG-001–009 + dark/print PDFs); all doc paths updated; brief `hfp-x.md` gains drawings register; website HFP card shows DWG-002 flight-configurations figure (vendored into Pages bundle).

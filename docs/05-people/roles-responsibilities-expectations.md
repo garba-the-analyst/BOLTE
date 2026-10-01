@@ -10,12 +10,12 @@
 - Set direction, approve Canon changes, partnerships, spending, publications, competition entries.
 - Mentor members; ensure treasury transparency; lead legal conversion to Ltd.
 
-## Treasurer (B1, 7.5% pool weight)
+## Treasurer (B1, 4.5% pool weight)
 - Maintain income/expense ledger, receipts, monthly statement to all members.
 - Custody of treasury (50%); dual approval with one co-founder for disbursements.
 - Own cap-table/distribution sheet; flag shortfalls early.
 
-## Product/Operations Manager (B2, 7.5% pool weight)
+## Product/Operations Manager (B2, 4.5% pool weight)
 - Own roadmap + NDAIE delivery (deck, video, rehearsals, logistics).
 - Run weekly reviews, risk log, QA on builds/demos.
 - Coordinate exhibition, travel, comms.
