@@ -3,6 +3,8 @@
 All notable documentation changes tracked here. Format: `YYYY-MM-DD — change`.
 
 ## [Unreleased]
+- Team seats + titles resolved (founders 01 Oct 2026): Garba CEO/CTO, Frances Research & Operations Lead, David = C Lead Engineer, Abdulazeez = D Assistant, Azeemah = B2 Product Designer & Manager, Timi = B1 Treasurer & Research Assistant (provisional), E vacant for Business & Financial Adviser. Equity numbers untouched (redefinition deferred).
+- Team page rebuilt: 7 cards (Garba photo live from `website/assets/team/p1-garba.jpg`; mark avatars for the rest; initials-only members get no photo per Q9 consent; vacant E dashed). Drop-in convention: `website/assets/team/<slot>-<name>.jpg` @800px. Still missing: portraits for Frances, David, Abdulazeez, Timi, Azeemah.
 - Membership intake 30 Sept–01 Oct 2026: 5 questionnaires processed (P1 Garba, P2 Frances, P3 Timi, P4 Zheemah, P5A Abdulazeez, P5B David). Full PII in gitignored `docs/05-people/private/roster.md` ONLY — nothing personal committed.
 - Founders' decisions applied: contact bolte.tech0@gmail.com live on site; effective date 02 Oct 2026; Lagos/₦/Nigerian-English kept; Team Lead Garba; NEW split 70/6+6/4.5×4 (E vacant) in equity model + cap-table + MOU + site. OPEN: P5A/P5B→C/D assignment, 5th-seat math (0 vs 5×3.6), F8 spending/commitment rules (founders split), P3 gaps + 3hrs Treasurer concern.
 - Website team page: 2 named members added (consent: full name), B1/B2 as initials, seats table updated.

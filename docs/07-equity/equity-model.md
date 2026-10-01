@@ -19,8 +19,8 @@ All percentages are VARIABLES — tune without rewriting by editing `cap-table-t
 | Essien Frances | 6.0 | 20% | Co-founder |
 | Treasurer — E.T.D. (P3, provisional) | 4.5 | 15% | Premium for custody/reporting |
 | Product/Ops Mgr — Y.A.O. (P4) | 4.5 | 15% | Premium for delivery |
-| Member C [P5A or P5B — assign] | 4.5 | 15% | |
-| Member D [the other P5 filer — assign] | 4.5 | 15% | |
+| Member C — David Uzondu, Lead Engineer | 4.5 | 15% | |
+| Member D — Abdulazeez Masud, Assistant to Lead Engineer | 4.5 | 15% | |
 | Member E — VACANT | 0.0 | — | Held in Treasury until filled |
 | Total | 100 | 100% of D = 30% of N | |
 
