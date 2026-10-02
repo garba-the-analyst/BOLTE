@@ -3,6 +3,7 @@
 All notable documentation changes tracked here. Format: `YYYY-MM-DD — change`.
 
 ## [Unreleased]
+- Equity v2.0 two-layer from Garba's v1.0 pack (`docs/BOLTE critical/`, 7 DOCX committed + `00-INDEX.md`): Layer A cash decided (70/6/6/4.5×4, reserve-first, sunset at CAC) + Layer B ownership draft (65/18/1/16, vesting, leavers, dilution, scorecard, D1–D5) in `equity-model.md` + new `cap-table-layerB.csv`; F8 spend tiers recorded as Playbook proposal; Seat E math closed (stays Treasury); MOU §6 + website legal updated. Pack under counsel review — v0.2 templates stay current until adoption.
 - Website text trim: removed internal `docs/` path references, scaffolding notes, and redundancies from all 7 public pages (footers, sources, joining card, seats table); all facts, gates, and disclaimers kept.
 - Team complete: Zheemah's portrait added (`website/assets/team/b2-azeemah.jpg`) — all six photos live, no placeholders left.
 - Team page with photos: extracted 4 portraits from submitted PDFs (Frances, Timi, David, Abdulazeez) + Garba's file → `website/assets/team/` @800px; full names for all six per CEO decision (overrides P3/P4 Q9 initials-only — re-consent at signing). Missing: Zheemah's portrait (her PDF not on disk — send the Q23 file).

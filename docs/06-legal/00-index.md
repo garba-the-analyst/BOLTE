@@ -11,6 +11,7 @@
 | Code of Conduct | `../05-people/code-of-conduct.md` | — | warning → suspension → removal |
 | Signing checklist | `signing-checklist.md` | v0.1 | Procedure |
 | CAC conversion note | `cac-conversion-note.md` | v0.1 | Explanatory, not advice |
+| v1.0 Critical Pack (7 DOCX, Garba 02 Oct 2026) | `docs/BOLTE critical/` | v1.0 draft | Under counsel review — NOT signed; supersedes v0.2 templates on adoption (see `00-INDEX.md` there) |
 
 ## Signing order (per person)
 1. Tailoring questionnaire answers recorded (A3 effective date, F1–F2 seats, G2 IDs, G4 prior IP).
