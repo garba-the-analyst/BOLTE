@@ -12,7 +12,7 @@ mkdir -p "$OUT"
 cp -r "$ROOT/website/." "$OUT/"
 rm -f "$OUT/FUNCTIONAL-SPEC.md" "$OUT/README.md"
 mkdir -p "$OUT/vendor" "$OUT/forms"
-cp -r "$ROOT/assets/logo-placeholder" "$ROOT/assets/animations" "$OUT/vendor/"
+cp -r "$ROOT/assets/logo-placeholder" "$ROOT/assets/animations" "$ROOT/assets/team" "$OUT/vendor/"
 cp -r "$ROOT/forms/." "$OUT/forms/"
 grep -rl '\.\./assets/' "$OUT" --include='*.html' | xargs sed -i 's|\.\./assets/|./vendor/|g'
 grep -rl '\.\./forms/' "$OUT" --include='*.html' | xargs sed -i 's|\.\./forms/|./forms/|g'

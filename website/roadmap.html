@@ -2,38 +2,54 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Roadmap — BOLTE</title>
+<meta name="theme-color" content="#0A1428">
 <meta name="description" content="BOLTE Phase 0-3 roadmap, gates, and exit criteria.">
+<title>Roadmap — BOLTE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="../assets/logo-placeholder/bolte-mark-dark.png">
 <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-<header class="site"><div class="nav">
-<a class="brand" href="index.html"><img data-logo src="../assets/logo-placeholder/bolte-lockup-dark.png" alt="BOLTE"><span class="sr">BOLTE</span></a>
-<input type="checkbox" id="navtoggle" class="navcheck">
-<label for="navtoggle" class="burger" aria-label="Menu"><span></span><span></span><span></span></label>
-<nav class="links" aria-label="Primary"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="roadmap.html">Roadmap</a><a href="team.html">Team</a><a href="contact.html">Contact</a><a href="legal.html">Legal</a></nav>
+<header class="topbar"><div class="container nav">
+<a href="index.html" aria-label="BOLTE home"><img class="logo" src="../assets/logo-placeholder/bolte-lockup-dark.png" alt="BOLTE" onerror="this.style.display='none';this.nextElementSibling.hidden=false"><strong class="brand-type" hidden>BOLTE</strong></a>
+<button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainnav">&#9776;</button>
+<nav class="navlinks" id="mainnav"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a class="active" href="roadmap.html">Roadmap</a><a href="team.html">Team</a><a href="contact.html">Contact</a><a href="legal.html">Legal</a></nav>
+<a class="navcta" href="mailto:bolte.tech0@gmail.com">LET'S CONNECT &#8594;</a>
 </div></header>
+
 <main>
-<section class="pagehero"><div class="wrap">
-<p class="eyebrow">Roadmap</p>
+<section class="pagehero"><div class="container">
+<div class="eyebrow">Roadmap</div>
 <h1>Phase 0 → 3</h1>
 <p>Prove, validate, build capability, scale — each phase with exit criteria.</p>
 </div></section>
-<section class="section"><div class="wrap">
-<div class="notice">Gate: no new product build beyond paper/bench-sim until AeroPulse-NG trial report + treasury review. HFP-X runs on its own evidence gates.</div>
-<ol class="timeline">
-<li><div class="card"><h3>Phase 0 — Prove <span class="badge b-proto">Now → 28 Nov 2026</span></h3><ul class="tight"><li>NDAIE: application 26 Sept → video 14 Oct → semi 28 Oct → finals 27–28 Nov Lagos.</li><li>AeroPulse-NG synthetic-feed polish; RTL-SDR I/Q + AWOS wiring in parallel.</li><li>Legal: all 7 sign MOU/NDA/IP; treasury ledger live. Exit: qualified + finalist push.</li></ul></div></li>
-<li><div class="card"><h3>Phase 1 — Validate <span class="badge b-concept">Q4 2026 → Q2 2027</span></h3><ul class="tight"><li>Live RF + field trial at [TBD site]; DuckDB writers; Comm-B; multi-scenario log.</li><li>First lab/workshop corner; talent intake round 1. Exit: TRL 6, trial report, 2nd use-case.</li></ul></div></li>
-<li><div class="card"><h3>Phase 2 — Capability <span class="badge b-concept">2027</span></h3><ul class="tight"><li>Prototyping facility, manufacturing partner, compute infra; 2nd product from pipeline; CAC Ltd + trademark filing. Exit: revenue/pilot + IP filings.</li></ul></div></li>
-<li><div class="card"><h3>Phase 3 — Scale <span class="badge b-program">2028+</span></h3><ul class="tight"><li>National deployment; ecosystem MOUs (universities/industry/government); Africa scoping. Exit: sustained ops, exportable talent model.</li></ul></div></li>
-</ol>
+
+<section class="section light"><div class="container">
+<div class="kicker">Gate rule</div>
+<div class="notice" style="background:#eaf0f6;border:1px solid #b0c9e1;border-left:4px solid var(--blue);color:#1e3a5c;padding:16px 20px;border-radius:8px;margin-bottom:32px"><strong>Gate:</strong> No new product build beyond paper/bench-sim until AeroPulse-NG trial report + treasury review. HFP-X runs on its own evidence gates.</div>
+<div class="steps">
+<div class="step"><span>PHASE 0</span><h3>Prove</h3><p>Now → 28 Nov 2026</p><ul class="tight" style="margin-top:12px"><li>NDAIE: application → video → semi → finals Lagos.</li><li>AeroPulse-NG synthetic-feed polish; RTL-SDR I/Q + AWOS wiring.</li><li>Legal: all 7 sign MOU/NDA/IP; treasury ledger live.</li><li>Exit: qualified + finalist push.</li></ul></div>
+<div class="step"><span>PHASE 1</span><h3>Validate</h3><p>Q4 2026 → Q2 2027</p><ul class="tight" style="margin-top:12px"><li>Live RF + field trial at [TBD site].</li><li>DuckDB writers; Comm-B; multi-scenario log.</li><li>First lab/workshop corner; talent intake round 1.</li><li>Exit: TRL 6, trial report, 2nd use-case.</li></ul></div>
+<div class="step"><span>PHASE 2</span><h3>Capability</h3><p>2027</p><ul class="tight" style="margin-top:12px"><li>Prototyping facility; manufacturing partner.</li><li>2nd product from pipeline.</li><li>CAC Ltd + trademark filing.</li><li>Exit: revenue/pilot + IP filings.</li></ul></div>
+<div class="step"><span>PHASE 3</span><h3>Scale</h3><p>2028+</p><ul class="tight" style="margin-top:12px"><li>National deployment.</li><li>Ecosystem MOUs (universities/industry/government).</li><li>Africa expansion scoping.</li><li>Exit: sustained ops, exportable talent model.</li></ul></div>
+</div>
 </div></section>
 </main>
-<footer class="site"><div class="wrap">
-<nav aria-label="Footer"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="roadmap.html">Roadmap</a><a href="team.html">Team</a><a href="contact.html">Contact</a><a href="legal.html">Legal</a></nav>
-<p>BOLTE · Pre-CAC · © <span data-year>2026</span></p>
+
+<footer class="footer"><div class="container">
+<div class="footer-top"><div class="footer-links">
+<div><strong>EXPLORE</strong><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a></div>
+<div><strong>COMPANY</strong><a href="team.html">Team</a><a href="contact.html">Contact</a><a href="legal.html">Legal</a></div>
+</div></div>
+<div class="footer-bottom"><span>© <span id="year">2026</span> BOLTE. All rights reserved.</span><span>Engineering indigenous capability.</span></div>
 </div></footer>
-<script src="assets/js/site.js"></script>
+<script>
+const toggle=document.querySelector('.mobile-toggle'),nav=document.querySelector('.navlinks');
+toggle.addEventListener('click',()=>{let open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'&#215;':'&#9776;'});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='&#9776;'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+if('IntersectionObserver'in window){let obs=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');obs.unobserve(entry.target)}}),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>obs.observe(el))}else document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));
+</script>
 </body>
 </html>

@@ -2,42 +2,58 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0A1428">
+<meta name="description" content="Contact BOLTE — bolte.tech0@gmail.com. Joining starts with the all-member questionnaire.">
 <title>Contact — BOLTE</title>
-<meta name="description" content="Contact BOLTE at bolte.tech0@gmail.com. Joining starts with the all-member questionnaire.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="../assets/logo-placeholder/bolte-mark-dark.png">
 <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-<header class="site"><div class="nav">
-<a class="brand" href="index.html"><img data-logo src="../assets/logo-placeholder/bolte-lockup-dark.png" alt="BOLTE"><span class="sr">BOLTE</span></a>
-<input type="checkbox" id="navtoggle" class="navcheck">
-<label for="navtoggle" class="burger" aria-label="Menu"><span></span><span></span><span></span></label>
-<nav class="links" aria-label="Primary"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="roadmap.html">Roadmap</a><a href="team.html">Team</a><a href="contact.html">Contact</a><a href="legal.html">Legal</a></nav>
+<header class="topbar"><div class="container nav">
+<a href="index.html" aria-label="BOLTE home"><img class="logo" src="../assets/logo-placeholder/bolte-lockup-dark.png" alt="BOLTE" onerror="this.style.display='none';this.nextElementSibling.hidden=false"><strong class="brand-type" hidden>BOLTE</strong></a>
+<button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainnav">&#9776;</button>
+<nav class="navlinks" id="mainnav"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="roadmap.html">Roadmap</a><a href="team.html">Team</a><a class="active" href="contact.html">Contact</a><a href="legal.html">Legal</a></nav>
+<a class="navcta" href="mailto:bolte.tech0@gmail.com">LET'S CONNECT &#8594;</a>
 </div></header>
+
 <main>
-<section class="pagehero"><div class="wrap">
-<p class="eyebrow">Contact</p>
+<section class="pagehero"><div class="container">
+<div class="eyebrow">Contact</div>
 <h1>Reach BOLTE</h1>
-<p>Official inbox is live. Never send secrets, unpublished inventions, or personal IDs.</p>
+<p>Write to <strong>bolte.tech0@gmail.com</strong>. Never send secrets, unpublished inventions, or personal IDs.</p>
 </div></section>
-<section class="section"><div class="wrap">
-<div class="grid">
-<div class="card"><h3>Official contact</h3><p><strong>bolte.tech0@gmail.com</strong> — inbox held by the co-founders (Team Lead: Abdullahi Garba). No phone published yet.</p><p class="muted small">What we seek now: test-site access, mentorship, components funding, pro-bono legal for CAC/trademark.</p></div>
-<div class="card"><h3>Message draft <span class="badge b-concept">no backend yet</span></h3><p class="muted small">Drafts stay in your browser (localStorage). Print or export, then send via the published inbox once live.</p>
-<form id="contact" onsubmit="return false">
-<div class="field"><label for="cname">Name</label><input id="cname" name="name" type="text" autocomplete="name"></div>
-<div class="field"><label for="corg">Organisation / school</label><input id="corg" name="org" type="text"></div>
-<div class="field"><label for="cmsg">Message</label><textarea id="cmsg" name="message" rows="5"></textarea></div>
-<p class="noprint"><button class="btn" type="button" onclick="window.print()">Print draft</button></p>
-</form></div>
+
+<section class="section light"><div class="container">
+<div class="grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:32px">
+<div class="card" style="background:#fff;border:1px solid #d7dfee;border-radius:12px;padding:24px">
+<h3 style="font-size:18px;margin-bottom:8px">Official contact</h3><p><strong>bolte.tech0@gmail.com</strong> — inbox held by the co-founders.</p><p class="muted small">No phone published yet.</p></div>
+<div class="card" style="background:#fff;border:1px solid #d7dfee;border-radius:12px;padding:24px">
+<h3 style="font-size:18px;margin-bottom:8px">Joining BOLTE?</h3><p>Start with the <a href="../forms/all-member-questionnaire.html" style="color:var(--blue-dim);font-weight:700">all-member questionnaire</a> — export JSON/CSV and send the file to the co-founders.</p><p>Then Stage 1 (info-only) → Stage 2 (agreements) → signed MOU/NDA/IP.</p>
+<ul class="tight" style="margin-top:12px">
+<li><a href="../forms/all-member-questionnaire.html">All-member questionnaire</a> — start here</li>
+<li><code>forms/member-info-form.html</code> — Stage 1</li>
+<li><code>forms/member-onboarding-form.html</code> — Stage 2</li>
+</ul>
 </div>
-<div class="card"><h3>Joining BOLTE?</h3><p>Start with the <strong><a href="../forms/all-member-questionnaire.html">all-member questionnaire</a></strong> — export JSON/CSV and send the file to the co-founders. Then Stage 1 (info-only) and Stage 2 (agreements), then signed MOU/NDA/IP.</p><ul class="tight"><li><a href="../forms/all-member-questionnaire.html">All-member questionnaire</a> — start here</li><li><code>forms/member-info-form.html</code> — Stage 1</li><li><code>forms/member-onboarding-form.html</code> — Stage 2</li></ul></div>
+</div>
 </div></section>
 </main>
-<footer class="site"><div class="wrap">
-<nav aria-label="Footer"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="roadmap.html">Roadmap</a><a href="team.html">Team</a><a href="contact.html">Contact</a><a href="legal.html">Legal</a></nav>
-<p>BOLTE · Pre-CAC · © <span data-year>2026</span></p>
+
+<footer class="footer"><div class="container">
+<div class="footer-top"><div class="footer-links">
+<div><strong>EXPLORE</strong><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a></div>
+<div><strong>COMPANY</strong><a href="team.html">Team</a><a href="legal.html">Legal</a></div>
+</div></div>
+<div class="footer-bottom"><span>© <span id="year">2026</span> BOLTE. All rights reserved.</span><span>Engineering indigenous capability.</span></div>
 </div></footer>
-<script src="assets/js/site.js"></script>
+<script>
+const toggle=document.querySelector('.mobile-toggle'),nav=document.querySelector('.navlinks');
+toggle.addEventListener('click',()=>{let open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'&#215;':'&#9776;'});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='&#9776;'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+if('IntersectionObserver'in window){let obs=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');obs.unobserve(entry.target)}}),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>obs.observe(el))}else document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));
+</script>
 </body>
 </html>
