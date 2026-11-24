@@ -1,4 +1,4 @@
-// BOLTE site: mobile menu, footer year, reduced-motion handling for the hero display. No network calls.
+// BOLTE site: mobile menu, footer year, scroll reveal, reduced-motion handling for animated graphics. No network calls.
 (function () {
   "use strict";
 
@@ -22,6 +22,18 @@
   document.querySelectorAll("[data-year]").forEach(function (el) {
     el.textContent = new Date().getFullYear();
   });
+
+  var items = document.querySelectorAll(".rv, .model");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -6% 0px" });
+    items.forEach(function (el) { io.observe(el); });
+  } else {
+    items.forEach(function (el) { el.classList.add("in"); });
+  }
 
   if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) {
     document.querySelectorAll("svg").forEach(function (svg) {
