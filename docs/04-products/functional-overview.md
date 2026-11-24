@@ -13,12 +13,12 @@ Consolidates each project repo's planning docs (`SPEC` + `ARCHITECTURE` + `API`,
 - **Functions:** register item → check-out (dual-custodian + fresh liveness) → check-in → shift handover (dual-out + dual-in signatures + count reconcile) → quarantine/dispose → signed audit export → `verify_chain`.
 - **Offline:** SQLCipher AES-256 local DB, hash-chained journal, removable-media export only.
 
-## DAFV — Concept TRL 1–2, spec-only
+## DAFV — Designed on paper
 - **Users:** depot receiving-dock auditor/operator.
 - **Functions:** acquire image (JTAG/UART/USB/file) → dual-hash (BLAKE3 + SHA-256) → manifest issue → Ed25519 verify → RFID provision/bind → PASS/FAIL/INCONCLUSIVE verdict + evidence → signed report. Never auto-flashes.
 - **Offline:** static Rust binary, local trust roots, content-addressed store.
 
-## C4ISR-DFE — Concept TRL 1–2, spec-only
+## C4ISR-DFE — Designed on paper
 - **Users:** vehicle/bunker command users.
 - **Functions:** ingest ADS-B/UAV-coords/RF-bearings/GPS tracks → normalize to TrackReport → associate/track/coast → geofence/proximity/silence/SOS events → offline MBTiles map → compressed protobuf UDP delta mesh sync → export snapshot.
 - **Offline:** MBTiles on device, store-and-forward, idempotent sequenced deltas.

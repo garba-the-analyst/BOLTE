@@ -1,4 +1,4 @@
-# C4ISR-DFE — Product Brief (Concept)
+# C4ISR-DFE — Product Brief (Designed on paper)
 
 Source: [c4isr-dfe](https://github.com/garba-the-analyst/c4isr-dfe) repo (planning pack: `ARCHITECTURE` + `DATABASE` + `API` + `ROADMAP` + `RISKS`). Spec only — no code yet.
 
@@ -9,7 +9,7 @@ Tactical vehicles/bunkers lack a unified offline picture — ADS-B, UAV coords, 
 Real-time command dashboard: Rust/Node.js telemetry pipeline → PostGIS / SQLite R*Tree spatial DB → MBTiles offline vector tiles (Leaflet/Maplibre) → Protocol Buffers + compressed UDP delta mesh sync.
 
 ## Status / Evidence
-Concept, TRL 1–2. Next: telemetry schema + spatial schema + sync protocol. Reuse AeroPulse-NG ADS-B feed where possible.
+Designed on paper: architecture, data model and interfaces are written. Next: telemetry schema + spatial schema + sync protocol. Reuse AeroPulse-NG ADS-B feed where possible.
 
 ## Standards & compliance
 Defensive situational-awareness posture, human in the loop, lawful users only. Offline-first, lossy-link tolerant.

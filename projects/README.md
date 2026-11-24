@@ -6,8 +6,8 @@ Every BOLTE project lives in its own public GitHub repo (code + specs + docs). T
 |---|---|---|---|
 | AeroPulse-NG — Tactical Radar & Airspace Surveillance Engine | https://github.com/garba-the-analyst/aeropulse-ng | Software prototype built; awaiting hardware for real-time testing | `/Projects/aeropulse-ng/` |
 | ASOL — Armory Shift & Ordnance Log | https://github.com/garba-the-analyst/asol | Designed on paper | `/Projects/asol/` |
-| DAFV — Defense Asset & Firmware Verifier | https://github.com/garba-the-analyst/dafv | Concept, TRL 1–2 | `/Projects/dafv/` |
-| C4ISR-DFE — Tactical C4ISR Data Fusion Engine | https://github.com/garba-the-analyst/c4isr-dfe | Concept, TRL 1–2 | `/Projects/c4isr-dfe/` |
+| DAFV — Defense Asset & Firmware Verifier | https://github.com/garba-the-analyst/dafv | Designed on paper | `/Projects/dafv/` |
+| C4ISR-DFE — Tactical C4ISR Data Fusion Engine | https://github.com/garba-the-analyst/c4isr-dfe | Designed on paper | `/Projects/c4isr-dfe/` |
 | TBR-HS — Tactical Biometric Radar & Health System | https://github.com/garba-the-analyst/tbr-hs | Designed (beyond concept) | `/Projects/tbr-hs/` |
 | HFP-X — Human Flight Platform | https://github.com/garba-the-analyst/bolte-hfp | Designed: schematics and architecture (34 vols + drawing set) | `/Projects/bolte-hfp/` |
 

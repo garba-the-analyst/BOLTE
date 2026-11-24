@@ -78,28 +78,28 @@
 <summary>
 <span class="pn">DAFV<small>Defense Asset and Firmware Verifier</small></span>
 <span class="ps">Proof that hardware and firmware are what they claim to be.</span>
-<span class="pm">Specification stage</span>
+<span class="pm">Designed on paper</span>
 <span class="pdm">Cybersecurity, industrial</span>
 </summary>
-<dl class="pdl"><div><dt>The need</dt><dd>Depots receive hardware and firmware with no local way to prove where it came from. Tampered or swapped binaries can be deployed without anyone noticing.</dd></div><div><dt>The approach</dt><dd>An offline audit station at the receiving dock. It reads a device image, checks it against a signed manifest, and binds the result to the asset. A person accepts or rejects it; it never flashes anything automatically.</dd></div><div><dt>Current status</dt><dd>Specification stage. The architecture and interfaces are drafted, and detailed design is under way.</dd></div></dl>
+<dl class="pdl"><div><dt>The need</dt><dd>Depots receive hardware and firmware with no local way to prove where it came from. Tampered or swapped binaries can be deployed without anyone noticing.</dd></div><div><dt>The approach</dt><dd>An offline audit station at the receiving dock. It reads a device image, checks it against a signed manifest, and binds the result to the asset. A person accepts or rejects it; it never flashes anything automatically.</dd></div><div><dt>Current status</dt><dd>Designed on paper: architecture, data model and interfaces are written. The lab prototype is the next step.</dd></div></dl>
 <div class="pst">
-<div><h4>Progress through the BOLTE model</h4><ol class="trk" aria-label="Progress through the BOLTE model"><li class="done"><i></i>Problem</li><li class="done"><i></i>Idea</li><li class="done"><i></i>Research</li><li class="cur"><i></i>Engineering</li><li class=""><i></i>Prototype</li><li class=""><i></i>Testing</li><li class=""><i></i>Improvement</li><li class=""><i></i>Deployment</li><li class=""><i></i>Impact</li></ol></div>
+<div><h4>Progress through the BOLTE model</h4><ol class="trk" aria-label="Progress through the BOLTE model"><li class="done"><i></i>Problem</li><li class="done"><i></i>Idea</li><li class="done"><i></i>Research</li><li class="done"><i></i>Engineering</li><li class="cur"><i></i>Prototype</li><li class=""><i></i>Testing</li><li class=""><i></i>Improvement</li><li class=""><i></i>Deployment</li><li class=""><i></i>Impact</li></ol></div>
 
-<div><h4>Roadmap</h4><ol class="rmap"><li><b>Now</b><span>Complete the specification and design.</span></li><li><b>Next</b><span>Lab prototype that checks device images against signed manifests.</span></li><li><b>Then</b><span>Connect to real device interfaces and asset tags.</span></li><li><b>Later</b><span>Pilot at a depot receiving dock.</span></li></ol></div>
+<div><h4>Roadmap</h4><ol class="rmap"><li><b>Now</b><span>Review the design with domain advisers and line up parts for a lab setup.</span></li><li><b>Next</b><span>Lab prototype that checks device images against signed manifests, after the first prototype's trial report and a resource review.</span></li><li><b>Then</b><span>Connect to real device interfaces and asset tags.</span></li><li><b>Later</b><span>Pilot at a depot receiving dock.</span></li></ol></div>
 </div>
 </details>
 <details class="pd" id="c4isr-dfe">
 <summary>
 <span class="pn">C4ISR-DFE<small>Tactical C4ISR Data Fusion Engine</small></span>
 <span class="ps">One offline picture for dispersed units on weak links.</span>
-<span class="pm">Specification stage</span>
+<span class="pm">Designed on paper</span>
 <span class="pdm">Communications, computing and AI</span>
 </summary>
-<dl class="pdl"><div><dt>The need</dt><dd>Vehicles and bunkers lack a single offline picture. Aircraft, drone, radio-bearing and GPS tracks arrive in separate tools and are lost when links degrade.</dd></div><div><dt>The approach</dt><dd>A command dashboard that merges those tracks onto an offline map and shares compact updates between units over lossy links, with store-and-forward so nothing is dropped.</dd></div><div><dt>Current status</dt><dd>Specification stage. It reuses lessons from the AeroPulse-NG prototype, and detailed design is under way.</dd></div></dl>
+<dl class="pdl"><div><dt>The need</dt><dd>Vehicles and bunkers lack a single offline picture. Aircraft, drone, radio-bearing and GPS tracks arrive in separate tools and are lost when links degrade.</dd></div><div><dt>The approach</dt><dd>A command dashboard that merges those tracks onto an offline map and shares compact updates between units over lossy links, with store-and-forward so nothing is dropped.</dd></div><div><dt>Current status</dt><dd>Designed on paper: architecture, data model and interfaces are written, reusing lessons from the AeroPulse-NG prototype. The lab prototype is the next step.</dd></div></dl>
 <div class="pst">
-<div><h4>Progress through the BOLTE model</h4><ol class="trk" aria-label="Progress through the BOLTE model"><li class="done"><i></i>Problem</li><li class="done"><i></i>Idea</li><li class="done"><i></i>Research</li><li class="cur"><i></i>Engineering</li><li class=""><i></i>Prototype</li><li class=""><i></i>Testing</li><li class=""><i></i>Improvement</li><li class=""><i></i>Deployment</li><li class=""><i></i>Impact</li></ol></div>
+<div><h4>Progress through the BOLTE model</h4><ol class="trk" aria-label="Progress through the BOLTE model"><li class="done"><i></i>Problem</li><li class="done"><i></i>Idea</li><li class="done"><i></i>Research</li><li class="done"><i></i>Engineering</li><li class="cur"><i></i>Prototype</li><li class=""><i></i>Testing</li><li class=""><i></i>Improvement</li><li class=""><i></i>Deployment</li><li class=""><i></i>Impact</li></ol></div>
 
-<div><h4>Roadmap</h4><ol class="rmap"><li><b>Now</b><span>Complete the specification and design.</span></li><li><b>Next</b><span>Lab fusion of several sensor feeds into one known picture.</span></li><li><b>Then</b><span>Two-station mesh that stays in sync through link loss.</span></li><li><b>Later</b><span>Pilot in a vehicle or bunker.</span></li></ol></div>
+<div><h4>Roadmap</h4><ol class="rmap"><li><b>Now</b><span>Review the design with domain advisers and prepare simulated sensor feeds.</span></li><li><b>Next</b><span>Lab fusion of several sensor feeds into one known picture, after the first prototype's trial report and a resource review.</span></li><li><b>Then</b><span>Two-station mesh that stays in sync through link loss.</span></li><li><b>Later</b><span>Pilot in a vehicle or bunker.</span></li></ol></div>
 </div>
 </details>
 <details class="pd" id="tbr-hs">
