@@ -12,6 +12,7 @@ on:
       - "website/assets/hfp/**"
       - ".github/workflows/pages.yml"
       - "build-scripts/package-pages.sh"
+      - "build-scripts/generate-pages.py"
   workflow_dispatch:
 
 permissions:

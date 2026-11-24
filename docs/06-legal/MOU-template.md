@@ -4,7 +4,7 @@
 
 **Parties:** (1) Abdullahi Garba `[TBD address/ID/phone]`; (2) Essien Frances `[TBD address/ID/phone]` (Co-founders); (3) `[Member B1 name/address/ID]`; (4) `[Member B2 …]`; (5) `[Member C …]`; (6) `[Member D …]`; (7) `[Member E …]`. Collectively "the Collective".
 
-**Recitals:** The parties wish to collaborate as BOLTE per the Canon (`docs/01-canon/`) to research/engineer/deploy indigenous technologies (flagship AeroPulse-NG; concepts ASOL/DAFV/C4ISR-DFE/TBR-HS spec-only), compete at NDAIE 2026, and convert to a Ltd on CAC incorporation.
+**Recitals:** The parties wish to collaborate as BOLTE per the Canon (`docs/01-canon/`) to research/engineer/deploy indigenous technologies (flagship AeroPulse-NG; designed programmes ASOL/TBR-HS/HFP-X and specification-stage DAFV/C4ISR-DFE), compete at NDAIE 2026, and convert to a Ltd on CAC incorporation.
 
 **Definitions:** *Work Product* = code, designs, docs, inventions, data, demos, decks created within BOLTE scope. *Prior IP* = Schedule A items owned before signing. *Net gains (N)* = gross prizes/grants/revenue minus receipted direct costs. *Effective date* **02 Oct 2026** (F2, both founders agree).
 

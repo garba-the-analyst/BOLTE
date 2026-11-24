@@ -8,7 +8,7 @@ Consolidates each project repo's planning docs (`SPEC` + `ARCHITECTURE` + `API`,
 - **Offline:** air-gapped by contract; sim == live decode path; deterministic replay.
 - **Limits (public):** synthesized FFT now, real RTL-SDR I/Q next; single-site now; cooperative targets primarily.
 
-## ASOL — Concept TRL 1–2, spec-only
+## ASOL — Designed on paper
 - **Users:** armory desk (armorer + duty officer + auditor).
 - **Functions:** register item → check-out (dual-custodian + fresh liveness) → check-in → shift handover (dual-out + dual-in signatures + count reconcile) → quarantine/dispose → signed audit export → `verify_chain`.
 - **Offline:** SQLCipher AES-256 local DB, hash-chained journal, removable-media export only.
@@ -23,12 +23,13 @@ Consolidates each project repo's planning docs (`SPEC` + `ARCHITECTURE` + `API`,
 - **Functions:** ingest ADS-B/UAV-coords/RF-bearings/GPS tracks → normalize to TrackReport → associate/track/coast → geofence/proximity/silence/SOS events → offline MBTiles map → compressed protobuf UDP delta mesh sync → export snapshot.
 - **Offline:** MBTiles on device, store-and-forward, idempotent sequenced deltas.
 
-## TBR-HS — Concept TRL 1–2, spec-only, safety-gated
-- **Users:** squad + medic (advisory only, human decides).
+## TBR-HS — Designed (beyond concept), safety-gated
+- **What it is:** a motion sensor that uses microwave signals (which the human body absorbs) to track the movement of nearby people, including through barriers, and shows their positions on a screen like a minimap. Uses: tracking enemy movement at the frontline, and locating people in search-and-rescue missions. Tracking personnel health is an added feature, not the core.
+- **Users:** squad, rescue teams, medic (advisory only, human decides).
 - **Functions:** BLE/UWB ingest → Butterworth + FFT DSP → vitals scores (STABLE/WATCH/URGENT + confidence) + radar motion verdicts (NO_MOTION/POSSIBLE/MOTION + arc/SNR) → Ed25519 IFF friend/unknown → 60–180° HUD + encrypted alert log + bench replay.
 - **Safety:** phantoms before people; no human contact until safety/ethics review + both-founders sign-off; advisory labels only, never auto-triage.
 
-## HFP-X — Concept BL-0.0, structure-only, evidence-gated
+## HFP-X — Designed (schematics and architecture), evidence-gated
 - **Users:** test pilots (long-term), ground crew, ground station, regulators, test range.
 - **Functions:** vertical take-off → controlled hover → transition ↔ horizontal cruise → landing, across 15 mission modes + emergency stabilisation/recovery states; mission telemetry to ground station throughout; independent emergency recovery for defined failures.
 - **Programme:** 34-volume doc tree (requirements → architecture → propulsion/avionics/safety → verification → flight test → certification → operations → sustainment) + separate unmanned-first MVP demonstrator (Vol 33); human flight only after unmanned hover/transition/cruise evidence gates.

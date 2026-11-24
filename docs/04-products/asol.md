@@ -9,7 +9,7 @@ Armory custody runs on paper ledgers: check-in/out is slow to audit, single-cust
 Air-gapped, local-first armory desk: weapon/ammunition check-in/out with barcode + UHF RFID, enforced dual-custodian shift handovers, and liveness/fitness-for-duty pulse check before release. SQLite + SQLCipher (AES-256), Rust/C++ runtime, Tauri/Qt GUI.
 
 ## Status / Evidence
-Concept, TRL 1–2. Next: architecture + DB schema + API from `SPEC.md`, then encrypted-DB → ingest → handover → liveness-gate prototype.
+Designed on paper: architecture, DB schema and API are written from `SPEC.md`. Next: encrypted-DB → ingest → handover → liveness-gate prototype.
 
 ## Standards & compliance
 Lawful users only, dual-custodian accountability, human in the loop for release. MIT/Apache deps for core.

@@ -15,7 +15,7 @@ Air-gapped offline-first engine: ~$150 SDR + PC → dual-window ATC/tactical wor
 - One decode path: sim == live. Deterministic replay. MIT/Apache deps only.
 
 ## Status / Evidence
-v2.4.0 feature-complete prototype; 108 checks green; demo scenarios (7700 @45s, <1km miss @70s, dropout @112s). Remaining: real I/Q + live FFT, AWOS wiring, DF20/21 Comm-B, alert/weather writers, multi-site/RBAC/offline tiles.
+Flagship. v2.4.0 software prototype built and running on simulated signals; waiting on hardware components for real-time testing; 108 checks green; demo scenarios (7700 @45s, <1km miss @70s, dropout @112s). Remaining: real I/Q + live FFT, AWOS wiring, DF20/21 Comm-B, alert/weather writers, multi-site/RBAC/offline tiles.
 
 ## Standards & compliance
 Nig.CARs, ICAO Annex 2/5/10 Vol III, Doc 4444, DO-260B, HF-STD-010A, MIL-STD-2525D, NCAA SI-metric.
