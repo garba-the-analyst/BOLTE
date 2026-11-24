@@ -9,7 +9,7 @@ Tactical vehicles/bunkers lack a unified offline picture — ADS-B, UAV coords, 
 Real-time command dashboard: Rust/Node.js telemetry pipeline → PostGIS / SQLite R*Tree spatial DB → MBTiles offline vector tiles (Leaflet/Maplibre) → Protocol Buffers + compressed UDP delta mesh sync.
 
 ## Status / Evidence
-Designed on paper: architecture, data model and interfaces are written. Next: telemetry schema + spatial schema + sync protocol. Reuse AeroPulse-NG ADS-B feed where possible.
+Designed on paper: architecture, data model and interfaces are written. Next: lab fusion prototype with simulated sensor feeds. Reuse AeroPulse-NG ADS-B feed where possible.
 
 ## Standards & compliance
 Defensive situational-awareness posture, human in the loop, lawful users only. Offline-first, lossy-link tolerant.

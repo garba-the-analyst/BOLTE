@@ -9,7 +9,7 @@ Depots receive hardware/firmware with no local way to prove provenance — tampe
 Cryptographic audit station for receiving docks: JTAG/UART/USB readout → BLAKE3 + SHA-256 hashing → Ed25519 signature-tree manifest verify → encrypted RFID tag bind. Statically linked native Rust binary.
 
 ## Status / Evidence
-Designed on paper: architecture, data model and interfaces are written. Next: manifest format + verification flow + bus-interface design.
+Designed on paper: architecture, data model and interfaces are written. Next: lab prototype (manifest verification on fixtures).
 
 ## Standards & compliance
 Chain-of-custody logging, human accept/reject decision, lawful users only.
