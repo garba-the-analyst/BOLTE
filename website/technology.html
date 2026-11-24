@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Technology | BOLTE</title>
-<meta name="description" content="AeroPulse-NG, BOLTE's flagship offline airspace surveillance system, and the programmes behind it.">
+<meta name="description" content="BOLTE's six programmes across aerospace, communications, cybersecurity, defence logistics and sensing, each with its real maturity stated.">
 <meta name="theme-color" content="#0A1428">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BOLTE">
 <meta property="og:title" content="Technology | BOLTE">
-<meta property="og:description" content="AeroPulse-NG, BOLTE's flagship offline airspace surveillance system, and the programmes behind it.">
+<meta property="og:description" content="BOLTE's six programmes across aerospace, communications, cybersecurity, defence logistics and sensing, each with its real maturity stated.">
 <meta property="og:image" content="https://garba-the-analyst.github.io/BOLTE/assets/img/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
@@ -17,6 +17,7 @@
 <link rel="preload" href="assets/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/site.css">
+<script>document.documentElement.className+=' js';</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -27,6 +28,7 @@
 <nav class="nav-links" id="nav-links" aria-label="Main">
 <a href="technology.html" aria-current="page">Technology</a>
 <a href="company.html">Company</a>
+<a href="team.html">Team</a>
 <a href="contact.html">Contact</a>
 <a class="btn btn-primary btn-nav" href="mailto:bolte.tech0@gmail.com?subject=Partnership%20enquiry">Partner with us</a>
 </nav>
@@ -35,110 +37,98 @@
 <main id="main">
 <section class="band-navy grid-bg page-head">
 <div class="wrap">
-<h1>Technology built to work when infrastructure does not.</h1>
-<p class="lede">One working prototype, four concepts at specification stage and one long-horizon aerospace programme. Each is labelled with its real maturity.</p>
+<h1>Six programmes, one engineering discipline.</h1>
+<p class="lede">From a prototype in testing to long-horizon research, each programme states what it addresses and how mature it really is.</p>
 </div>
 </section>
 
 <section class="band band-pale">
-<div class="wrap flag-grid">
-<div>
-<h2 class="h2">AeroPulse-NG</h2>
-<p class="lede">Secondary aerodromes and tactical sites often lack affordable low-altitude surveillance. Imported systems are expensive, depend on connectivity and power, and are difficult to maintain locally.</p>
-<p class="lede">AeroPulse-NG is our answer: an air-gapped surveillance engine that runs on low-cost radio hardware and a standard PC, designed for dual civil and defence use.</p>
+<div class="wrap">
+<div class="pd-head" aria-hidden="true"><span>Programme</span><span>What it does</span><span>Maturity</span><span>Domain</span></div>
+<div class="pds">
+<details class="pd" id="aeropulse-ng">
+<summary>
+<span class="pn">AeroPulse-NG</span>
+<span class="ps">Offline airspace surveillance on low-cost radio hardware.</span>
+<span class="pm">Prototype</span>
+<span class="pdm">Aerospace, defence, computing</span>
+</summary>
+<dl class="pdl"><div><dt>The need</dt><dd>Secondary aerodromes and tactical sites often lack affordable low-altitude surveillance. Imported systems are costly, depend on connectivity and power, and are hard to maintain locally.</dd></div><div><dt>The approach</dt><dd>An offline surveillance workstation that runs on low-cost software-defined radio and a standard PC. It receives aircraft transponder and ACARS messages, tracks aircraft, and raises conflict, emergency and geofence alerts. It is advisory: an operator decides.</dd></div><div><dt>Where it stands</dt><dd>Functional prototype, technology readiness level 4 to 5, running on simulated radio signals. Live radio input and a field trial come next.</dd></div></dl>
+</details>
+<details class="pd" id="asol">
+<summary>
+<span class="pn">ASOL</span>
+<span class="ps">Armoury custody and ordnance logging without paper ledgers.</span>
+<span class="pm">Concept</span>
+<span class="pdm">Defence logistics</span>
+</summary>
+<dl class="pdl"><div><dt>The need</dt><dd>Armoury custody still runs on paper ledgers. Check-in and check-out are slow to audit, single-custodian handovers leave accountability gaps, and unfit personnel can draw equipment unchecked.</dd></div><div><dt>The approach</dt><dd>An offline armoury desk with barcode and RFID check-in and out, enforced dual-custodian shift handovers, a fitness-for-duty check before release, and an encrypted local database.</dd></div><div><dt>Where it stands</dt><dd>Specification only (technology readiness level 1 to 2). Build starts after the first prototype's trial report and a resource review.</dd></div></dl>
+</details>
+<details class="pd" id="dafv">
+<summary>
+<span class="pn">DAFV</span>
+<span class="ps">Proof that hardware and firmware are what they claim to be.</span>
+<span class="pm">Concept</span>
+<span class="pdm">Cybersecurity, industrial</span>
+</summary>
+<dl class="pdl"><div><dt>The need</dt><dd>Depots receive hardware and firmware with no local way to prove where it came from. Tampered or swapped binaries can be deployed without anyone noticing.</dd></div><div><dt>The approach</dt><dd>An offline audit station at the receiving dock. It reads a device image, checks it against a signed manifest, and binds the result to the asset. A person accepts or rejects it; it never flashes anything automatically.</dd></div><div><dt>Where it stands</dt><dd>Specification only (technology readiness level 1 to 2).</dd></div></dl>
+</details>
+<details class="pd" id="c4isr-dfe">
+<summary>
+<span class="pn">C4ISR-DFE</span>
+<span class="ps">One offline picture for dispersed units on weak links.</span>
+<span class="pm">Concept</span>
+<span class="pdm">Communications, computing and AI</span>
+</summary>
+<dl class="pdl"><div><dt>The need</dt><dd>Vehicles and bunkers lack a single offline picture. Aircraft, drone, radio-bearing and GPS tracks arrive in separate tools and are lost when links degrade.</dd></div><div><dt>The approach</dt><dd>A command dashboard that merges those tracks onto an offline map and shares compact updates between units over lossy links, with store-and-forward so nothing is dropped.</dd></div><div><dt>Where it stands</dt><dd>Specification only (technology readiness level 1 to 2). It reuses lessons from our first prototype.</dd></div></dl>
+</details>
+<details class="pd" id="tbr-hs">
+<summary>
+<span class="pn">TBR-HS</span>
+<span class="ps">Advisory squad health and presence sensing, behind safety review.</span>
+<span class="pm">Research concept</span>
+<span class="pdm">Sensing, healthcare</span>
+</summary>
+<dl class="pdl"><div><dt>The need</dt><dd>Squad health degrades silently in the field, and through-wall human presence is invisible without a way to tell friend from foe.</dd></div><div><dt>The approach</dt><dd>Wearable vitals plus micro-Doppler radar, producing advisory health scores and motion verdicts, with signed friend-identification tokens.</dd></div><div><dt>Safety</dt><dd>Advisory only, and a human always decides. Testing starts with physical phantoms. No testing on people until a safety and ethics review is done and both founders sign off.</dd></div></dl>
+</details>
+<details class="pd" id="hfp-x">
+<summary>
+<span class="pn">HFP-X</span>
+<span class="ps">A long-horizon piloted vertical-lift flight programme.</span>
+<span class="pm">Documentation only</span>
+<span class="pdm">Aerospace, transportation</span>
+</summary>
+<dl class="pdl"><div><dt>The aim</dt><dd>A Nigerian-engineered platform that takes off vertically, hovers, transitions to forward flight, cruises and lands, with independent recovery for defined failures.</dd></div><div><dt>The approach</dt><dd>A 34-volume documentation set, from requirements through certification and operations, plus a separate unmanned-first demonstrator. Human flight comes only after unmanned hover, transition and cruise have passed evidence gates.</dd></div><div><dt>Where it stands</dt><dd>Structure only. Performance values are undecided, no design has been selected, and nothing is claimed to meet any standard. No hardware is built or operated outside controlled conditions.</dd></div></dl>
+</details>
 </div>
-<dl class="spec spec-light">
-<div><dt>Signals</dt><dd>ADS-B and Mode S on 1090 MHz; ACARS messages</dd></div>
-<div><dt>Tracking</dt><dd>Multi-source tracking with state estimation and dead reckoning</dd></div>
-<div><dt>Alerting</dt><dd>Conflict alerts against ICAO separation minima; emergency-code detection; geofencing</dd></div>
-<div><dt>Weather</dt><dd>Fusion of airfield sensors and broadcast data, with a harmattan-aware fallback</dd></div>
-<div><dt>Operator views</dt><dd>Controller and tactical displays side by side, with SI-metric units</dd></div>
-<div><dt>Testing</dt><dd>Deterministic replay, so simulated and live data follow one decode path</dd></div>
-<div><dt>Deployment</dt><dd>Fully offline. Locally maintainable software, with permissively licensed dependencies</dd></div>
-<div><dt>Maturity</dt><dd>Functional prototype, technology readiness level 4 to 5. Live radio input and a field trial come next</dd></div>
-</dl>
+<p class="small" style="margin-top:22px">Select a programme to read more.</p>
 </div>
 </section>
 
 <section class="band band-white">
 <div class="wrap">
 <div class="sec-head">
-<h2 class="h2">Designed against recognised standards.</h2>
-<p class="lede">We design against these references. They guide our engineering and are not certifications.</p>
+<h2 class="h2 wide">Rules every programme follows.</h2>
 </div>
-<div class="cols3">
-<div><h3>Aviation</h3><p>ICAO Annexes 2 and 10, ICAO Doc 4444 separation minima, RTCA DO-260B for ADS-B, and the Nigeria Civil Aviation Regulations.</p></div>
-<div><h3>Symbology</h3><p>MIL-STD-2525D for tactical symbols and human-factors guidance for operator displays.</p></div>
-<div><h3>Software</h3><p>Open, permissive licences in the core. Sensitive defence modules stay proprietary and are shared only under agreement.</p></div>
-</div>
-</div>
-</section>
-
-<section class="band band-pale">
-<div class="wrap">
-<div class="sec-head">
-<h2 class="h2 wide">Programme portfolio.</h2>
-<p class="lede">No new product build begins until AeroPulse-NG completes its field trial and we review our resources. This keeps a small team focused on proving one product first.</p>
-</div>
-<div class="prog-head"><span>Programme</span><span>What it does</span><span>Maturity</span><span>Domain</span></div>
-<div class="prog">
-<div class="prog-row">
-<h3>AeroPulse-NG</h3>
-<p>Offline airspace surveillance and tactical display.</p>
-<span class="st live">Prototype</span>
-<span class="dm">Aerospace, defence</span>
-</div>
-<div class="prog-row">
-<h3>ASOL</h3>
-<p>Armoury custody and ordnance logging with dual-custodian release, replacing paper ledgers.</p>
-<span class="st">Concept</span>
-<span class="dm">Defence logistics</span>
-</div>
-<div class="prog-row">
-<h3>DAFV</h3>
-<p>Cryptographic verification of assets and firmware before deployment.</p>
-<span class="st">Concept</span>
-<span class="dm">Cybersecurity</span>
-</div>
-<div class="prog-row">
-<h3>C4ISR-DFE</h3>
-<p>Offline data fusion and map sharing across lossy tactical links.</p>
-<span class="st">Concept</span>
-<span class="dm">Telecommunications</span>
-</div>
-<div class="prog-row">
-<h3>TBR-HS</h3>
-<p>Exploratory radar sensing for decision support. Advisory only, and held behind ethics and safety review.</p>
-<span class="st">Research concept</span>
-<span class="dm">Sensing</span>
-</div>
-<div class="prog-row">
-<h3>HFP-X</h3>
-<p>Piloted vertical-lift and transition flight, starting with an unmanned demonstrator path.</p>
-<span class="st">Documentation only</span>
-<span class="dm">Aerospace</span>
-</div>
-</div>
+<ul class="principles"><li class="rv" style="--i:0"><h3>Nigerian fit</h3><p>Designed around power, connectivity, climate and the engineers who will maintain it.</p></li><li class="rv" style="--i:1"><h3>Honest maturity</h3><p>Each programme states its technology readiness level. A concept is labelled a concept.</p></li><li class="rv" style="--i:0"><h3>Standards named, not claimed</h3><p>We design against recognised standards and never claim a certification we do not hold.</p></li><li class="rv" style="--i:1"><h3>Safety before deployment</h3><p>Testing and documentation come first. Anything involving people goes through safety and ethics review.</p></li><li class="rv" style="--i:0"><h3>Cost and maintainability</h3><p>Commodity hardware, permissive licences, and software that Nigerian engineers can support.</p></li><li class="rv" style="--i:1"><h3>Gated growth</h3><p>Concepts stay on paper until the first prototype has its trial report and we have reviewed our resources.</p></li></ul>
 </div>
 </section>
 
 <section class="band band-navy grid-bg">
 <div class="wrap">
-<div class="sec-head">
-<h2 class="h2 wide">Where we are going.</h2>
-</div>
+<div class="sec-head"><h2 class="h2 wide">Where we are going.</h2></div>
 <div class="path">
-<div class="now"><h3>Prove</h3><div class="when">Now</div><p>Demonstrate AeroPulse-NG in competition and to evaluators, and put governance in place.</p></div>
-<div><h3>Validate</h3><div class="when">Next</div><p>Live radio field trial, a published trial report and a second use case.</p></div>
-<div><h3>Build capability</h3><div class="when">Following</div><p>Prototyping facility, manufacturing partner, incorporation, IP filings and a first pilot.</p></div>
-<div><h3>Scale</h3><div class="when">Longer term</div><p>National deployment and partnerships with universities, industry and government.</p></div>
+<div class="now rv"><h3>Prove</h3><div class="when">Now</div><p>Demonstrate our first prototype in competition and to evaluators, and put governance in place.</p></div>
+<div class="rv" style="--i:1"><h3>Validate</h3><div class="when">Next</div><p>Live radio field trial, a published trial report and a second use case.</p></div>
+<div class="rv" style="--i:2"><h3>Build capability</h3><div class="when">Following</div><p>Prototyping facility, manufacturing partner, incorporation, IP filings and a first pilot.</p></div>
+<div class="rv" style="--i:3"><h3>Scale</h3><div class="when">Longer term</div><p>National deployment and partnerships with universities, industry and government.</p></div>
 </div>
 </div>
 </section>
 <section class="cta">
 <div class="wrap cta-inner">
-<div><h2>Want to evaluate <span style="white-space:nowrap">AeroPulse-NG</span>?</h2><p>We welcome pilot sites, technical reviewers and research partners.</p></div>
-<a class="btn btn-light" href="mailto:bolte.tech0@gmail.com?subject=AeroPulse-NG%20evaluation">Request an evaluation</a>
+<div><h2>Want to evaluate or support a programme?</h2><p>We welcome pilot sites, technical reviewers and research partners.</p></div>
+<a class="btn btn-light" href="mailto:bolte.tech0@gmail.com?subject=Programme%20enquiry">Start a conversation</a>
 </div>
 </section>
 </main>
@@ -155,6 +145,7 @@
 <ul>
 <li><a href="technology.html">Technology</a></li>
 <li><a href="company.html">Company</a></li>
+<li><a href="team.html">Team</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
 </div>

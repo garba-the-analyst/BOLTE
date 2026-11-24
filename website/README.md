@@ -23,3 +23,9 @@ Static HTML, CSS and a small JS file. No framework, no build step, no cookies, n
 ## Run and deploy
 - Preview: `python3 -m http.server -d website 8080`
 - Deploy: push to `main`. `.github/workflows/pages.yml` runs `build-scripts/package-pages.sh`.
+
+
+## Update (v4.1)
+- Team photos and full names are published per the CEO's decision (Team page). Members who chose initials-only (E.T.D., Y.A.O.) are shown by initials until they re-consent in writing.
+- Advisers remain 'Seat open' boxes until agreements are signed.
+- Pages are generated from build_site.py (kept outside this folder); edit copy there and regenerate.
