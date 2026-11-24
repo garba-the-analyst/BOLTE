@@ -365,3 +365,61 @@ html.js .pc.rv{transform:none}
 .pd-head,.pd summary{grid-template-columns:240px 1fr 170px 200px}
 .pn{font-size:24px}
 @media(max-width:1000px){.pd summary{grid-template-columns:1fr}}
+
+/* ---------- v4.2: programme status, roadmap, flagship, mobile map ---------- */
+.flag{display:inline-block;margin-left:10px;padding:2px 9px;background:var(--blue);color:#fff;font-size:12px;font-weight:600;border-radius:2px;vertical-align:middle;letter-spacing:.01em}
+.pn .flag{font:600 12px var(--body);font-stretch:100%;margin-left:12px}
+.bar{height:4px;background:var(--rule-light);margin-top:18px;position:relative;overflow:hidden}
+.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--blue)}
+.pg-wide{grid-column:1/-1;display:grid;grid-template-columns:1fr 1.1fr;gap:32px;align-items:center}
+.pg-wide .pg-img{width:100%;height:auto;display:block;border:1px solid var(--rule-dark)}
+.pg-wide h3{font-size:30px}
+.pst{display:grid;grid-template-columns:1fr 1fr;gap:28px 48px;padding:6px 0 38px;border-top:1px solid var(--rule-light);margin-top:4px}
+.pst>div:first-child{grid-column:1/-1;padding-top:26px}
+.pst h4{font:600 15px var(--body);margin:0 0 14px;color:var(--ink)}
+.pfig{margin:0;grid-column:2;grid-row:2}
+.pfig img{width:100%;height:auto;display:block;border:1px solid var(--rule-dark);background:#070f1c}
+.pfig figcaption{font-size:13.5px;color:var(--steel);margin-top:8px}
+.pst>div:last-child{grid-column:1;grid-row:2}
+.pst:not(:has(.pfig))>div:last-child{grid-column:1/-1}
+.trk{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(9,1fr);gap:6px}
+.trk li{font-size:13px;color:var(--steel);padding-top:10px;position:relative;line-height:1.3}
+.trk li i{position:absolute;left:0;right:0;top:0;height:5px;background:var(--rule-light)}
+.trk li.done{color:var(--ink)}
+.trk li.done i{background:var(--blue)}
+.trk li.cur{color:var(--blue-dim);font-weight:600}
+.trk li.cur i{background:repeating-linear-gradient(90deg,var(--blue) 0 6px,#fff 6px 9px)}
+.rmap{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--rule-light)}
+.rmap li{position:relative;padding:0 0 18px}
+.rmap li:last-child{padding-bottom:0}
+.rmap li::before{content:"";position:absolute;left:-29px;top:6px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--steel)}
+.rmap li:first-child::before{background:var(--blue);border-color:var(--blue)}
+.rmap b{display:block;font-size:14px;color:var(--blue-dim);margin-bottom:2px}
+.rmap span{color:var(--ink-2);font-size:16px}
+.pn small{max-width:34ch}
+@media(max-width:1000px){
+  .pg-wide{grid-template-columns:1fr}
+  .pst{grid-template-columns:1fr}
+  .pfig,.pst>div:last-child{grid-column:1;grid-row:auto}
+  .trk{grid-template-columns:repeat(3,1fr);gap:14px 8px}
+}
+/* mobile map: animated version of the capability diagram */
+@media(max-width:760px){
+  .sm-list{position:relative;overflow:hidden}
+  .sm-list::after{content:"";position:absolute;left:0;right:0;top:-40%;height:40%;background:linear-gradient(180deg,transparent,rgba(104,176,255,.22),transparent);animation:smsweep 5s linear 1.4s infinite;pointer-events:none}
+  .sm-core-l{position:relative;animation:smpop .7s ease-out both}
+  .sm-core-l::after{content:"";position:absolute;inset:0;border:2px solid var(--blue-soft);animation:smring 3s ease-out 1.2s infinite}
+  .sm-list li{opacity:0;animation:smchip .5s ease-out calc(var(--i)*.13s + .5s) forwards,smglow 6s ease-in-out calc(var(--i)*.4s + 2.5s) infinite}
+  .sm-list ul.dashed li{animation-name:smchip,smglow2}
+  .pg-wide h3{font-size:26px}
+}
+@keyframes smchip{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes smglow{0%,12%,100%{box-shadow:none;border-color:var(--blue-soft)}6%{box-shadow:0 0 14px rgba(104,176,255,.7);border-color:#fff}}
+@keyframes smglow2{0%,12%,100%{box-shadow:none}6%{box-shadow:0 0 12px rgba(169,189,216,.6);border-color:#fff}}
+@keyframes smring{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.18,1.7);opacity:0}}
+@keyframes smsweep{to{top:110%}}
+@media(prefers-reduced-motion:reduce){
+  .sm-list::after,.sm-core-l::after{display:none}
+  .sm-list li{opacity:1!important;animation:none!important}
+  .sm-core-l{animation:none!important}
+}

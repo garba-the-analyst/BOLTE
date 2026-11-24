@@ -16,7 +16,7 @@ Prioritized against Goals 1/5/7 (defense-first, Nigerian-fit, buildable with 7-p
 | ASOL — Armory Shift & Ordnance Log | [asol](https://github.com/garba-the-analyst/asol) | Tactical physical security & ordnance custody | Planning pack complete (`ARCHITECTURE` + `DATABASE` + `API` + `ROADMAP` + `RISKS`) |
 | DAFV — Defense Asset & Firmware Verifier | [dafv](https://github.com/garba-the-analyst/dafv) | Supply-chain security & anti-tamper | Planning pack complete |
 | C4ISR-DFE — Tactical C4ISR Data Fusion Engine | [c4isr-dfe](https://github.com/garba-the-analyst/c4isr-dfe) | Spatial intel & multi-sensor mapping | Planning pack complete |
-| TBR-HS — Tactical Biometric Radar & Health System | [tbr-hs](https://github.com/garba-the-analyst/tbr-hs) | Vitals telemetry & micro-Doppler | Planning pack complete (safety review before human testing) |
+| TBR-HS — Tactical Biometric Radar & Health System | [tbr-hs](https://github.com/garba-the-analyst/tbr-hs) | Microwave motion sensing: tracks people on a minimap for frontline and search-and-rescue use (health tracking is an added feature) | Designed (beyond concept); bench simulation next. Safety review before any human testing |
 
 Gate: no new build until AeroPulse-NG trial report + treasury review.
 

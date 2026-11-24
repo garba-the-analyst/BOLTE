@@ -29,3 +29,12 @@ Static HTML, CSS and a small JS file. No framework, no build step, no cookies, n
 - Team photos and full names are published per the CEO's decision (Team page). Members who chose initials-only (E.T.D., Y.A.O.) are shown by initials until they re-consent in writing.
 - Advisers remain 'Seat open' boxes until agreements are signed.
 - Pages are generated from build_site.py (kept outside this folder); edit copy there and regenerate.
+
+## Hosting (v4.2)
+The site is static, so any static host works. The generated pages live in `website/`; edit copy in `build-scripts/generate-pages.py` and regenerate with `python3 build-scripts/generate-pages.py website [site_url]`.
+
+- **GitHub Pages:** already wired (`.github/workflows/pages.yml`, deploys on push to `main`).
+- **Netlify:** import the repo. `netlify.toml` sets the build command, publish folder (`_pages`) and security headers. Add a custom domain in Site settings.
+- **Render:** New > Blueprint, pick the repo. `render.yaml` defines a static site with the same bundle and headers.
+- The build passes the host's own URL so social-share images use the right address. Without it the GitHub Pages address is used.
+- The packaged bundle leaves out this README and FUNCTIONAL-SPEC.md.
